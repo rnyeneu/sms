@@ -43,12 +43,45 @@
             @endif
             <div class="card">
               <div class="card-header">
-                  Students List
                   <a href="{{ url('student/create') }}" class="btn btn-primary btn-sm float-end">Add Student</a>
               </div>
               <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                
+                <h5 class="card-title">Students List</h5>
+        <table class="table">
+            <thead>
+              <tr>
+                <th >#</th>
+                <th >Reg Number</th>
+                <th >First Name</th>
+                <th >Surname</th>
+                <th >DOB</th>
+                <th >Sex</th>
+                <th >Guardian phone</th>
+                <th >Address</th>
+                <th ></th>
+              </tr>
+            </thead>
+            <tbody>
+              @foreach ($student as $row)
+              <tr>
+                <td></td>
+                <td>{{ $row->registration_number }}</td>
+                <td>{{ $row->first_name }}</td>
+                <td>{{ $row->surname }}</td>
+                <td>{{ $row->birth_date }}</td>
+                <td>{{ $row->sex }}</td>
+                <td>{{ $row->guardian_phone_number }}</td>
+                <td>{{ $row->address }}</td>
+                <td>
+                  <a href="student/{{ $row->id }}/edit" class="btn btn-warning btn-sm">Edit</a>
+                  <a href="" class="btn btn-danger btn-sm">Delete</a>
+
+                </td>
+              </tr>
+              @endforeach
+            </tbody>
+        </table>
+
                 
               </div>
             </div>
