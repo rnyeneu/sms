@@ -12,14 +12,14 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg  navbar navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Student Information System</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        
-      </div>
-    </nav>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Student Information System</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+        </div>
+      </nav>
 
     <div class="container p-2 bg-light ">
         <div class="row">
@@ -27,27 +27,28 @@
 
             <div class="card">
                 <div class="card-header">
-                    Add Student
+                    Edit Student
                     <a href="{{ url('student') }}" class="btn btn-danger btn-sm float-end">BACK</a>
                 </div>
                 <div class="card-body">       
-                  <form action="{{ url('student') }}" method="POST">
+                  <form action="{{ url('student/'.$student->id) }}" method="POST">
                       @csrf
+                      @method('PUT')
                       <div class="form-group mb-3">
                         <label for="">Registration Number</label>
-                        <input type="text" class="form-control" name="registration_number">
+                        <input value="{{ $student->registration_number }}" type="text" class="form-control" name="registration_number" >
                       </div>
                       <div class="form-group mb-3">
                         <label for="">First Name</label>
-                        <input type="text" class="form-control" name="first_name">
+                        <input value="{{ $student->first_name }}" type="text" class="form-control" name="first_name">
                       </div>
                       <div class="form-group mb-3">
                         <label for="">Surname</label>
-                        <input type="text" class="form-control" name="surname">
+                        <input value="{{ $student->surname }}" type="text" class="form-control" name="surname">
                       </div>
                       <div class="form-group mb-3">
                         <label for="">Date of Birth</label>
-                        <input type="date" class="form-control" name="birth_date">
+                        <input value="{{ $student->birth_date }}" type="text" class="form-control" name="birth_date">
                       </div>
                       <div class="form-group mb-3">
                         <label for="">Sex</label>
@@ -59,14 +60,14 @@
                       </div>
                       <div class="form-group mb-3">
                         <label for="">Guardian Phone Number</label>
-                        <input type="text" class="form-control" name="guardian_phone_number">
+                        <input value="{{ $student->guardian_phone_number}}" type="text" class="form-control" name="guardian_phone_number">
                       </div>
                       <div class="form-group mb-3">
                         <label for="">Address</label>
-                        <input type="text" class="form-control" name="address">
+                        <input value="{{ $student->address }}" type="text" class="form-control" name="address">
                       </div>
                       <div class="form-group mb-3">
-                        <button type="submit" class="btn btn-primary">SAVE</button>
+                        <button type="submit" class="btn btn-primary">UPDATE</button>
                       </div>
                   </form>
                 </div>

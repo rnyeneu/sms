@@ -56,7 +56,8 @@ class StudentsController extends Controller
      */
     public function show($id)
     {
-        //
+        $student = Student::find($id);
+        return view('student.show', compact('student'));
     }
 
     /**
@@ -67,7 +68,8 @@ class StudentsController extends Controller
      */
     public function edit($id)
     {
-        //
+        $student = Student::find($id);
+        return view('student.edit', ['student' => $student ]);
     }
 
     /**
@@ -79,7 +81,16 @@ class StudentsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $student = Student::find($id);
+        $student->registration_number = $request->input('registration_number');
+        $student->first_name = $request->input('first_name');
+        $student->surname = $request->input('surname');
+        $student->birth_date = $request->input('birth_date');
+        $student->sex = $request->input('sex');
+        $student->guardian_phone_number = $request->input('guardian_phone_number');
+        $student->address = $request->input('address');
+        $student->update();
+        return redirect('student')->with('status','A student updated successfully');
     }
 
     /**
@@ -90,6 +101,8 @@ class StudentsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $student = Student::find($id);
+        $student->delete();
+        return redirect('student')->with('status','A student deleted successfully');
     }
 }
