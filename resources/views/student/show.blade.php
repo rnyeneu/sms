@@ -17,7 +17,7 @@
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          
+
         </div>
       </nav>
 
@@ -29,7 +29,7 @@
             @endif
             <div class="card">
               <div class="card-header">
-                  <a href="{{ url('student/create') }}" class="btn btn-danger btn-sm float-end">BACK</a>
+                  <a href="{{ url('student/') }}" class="btn btn-danger btn-sm float-end">BACK</a>
               </div>
               <div class="card-body">
                 <h5 class="card-title"></h5>
@@ -68,7 +68,7 @@
         </div>
     </div>
 
- 
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
