@@ -50,7 +50,10 @@
               </tr>
             </thead>
             <tbody>
+              
+              
               @foreach ($student as $row)
+             
               <tr>
                 <td></td>
                 <td>{{ $row->registration_number }}</td>
@@ -75,6 +78,7 @@
                   
                 </td>
               </tr>
+              
               @endforeach
             </tbody>
         </table>
