@@ -15,6 +15,6 @@ use App\Http\Controllers\StudentsController;
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('dashboard');
 });
 Route::resource('student', StudentsController::class);
