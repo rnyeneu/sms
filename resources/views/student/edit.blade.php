@@ -1,65 +1,46 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-    <title>Student Information System</title>
-</head>
-<body>
-<nav class="navbar navbar-expand-lg  navbar navbar-dark bg-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Student Information System</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-    </div>
-</nav>
-
-<div class="container p-2 bg-light ">
+@extends('default')
+@section('sectionTitle', $studentTitle)
+@section('content')
     <div class="row">
-        <div class="col-md-6">
-
+        <div class="col-md-8">
             <div class="card">
-                <div class="card-header">
-                    Edit Student
-                    <a href="{{ url('student') }}" class="btn btn-danger btn-sm float-end">BACK</a>
-                </div>
-                <div class="card-body">
-                    <form action="{{ url('student/'.$student->id) }}" method="POST">
-                        @csrf
-                        @method('PUT')
-                        <div class="form-group mb-3">
-                            <label for="">Registration Number</label>
-                            <input value="{{ $student->registration_number }}" type="text" class="form-control"
-                                   name="registration_number">
+                <form action="{{ url('student/'.$student->id) }}" method="POST" class="form-horizontal" autocomplete="off">
+                    @csrf
+                    @method('PUT')
+                    <div class="card-body">
+                        <h4 class="card-title">Edit a student's details</h4>
+                        <div class="form-group row">
+                            <label for="regno"  class="col-sm-3 text-end control-label col-form-label">Registration Number</label>
+                            <div class="col-sm-9">
+                                <input value="{{ $student->registration_number }}" type="text" class="form-control" id="regno" placeholder="Registration number Here" name="registration_number">
+                            </div>
                         </div>
-                        <div class="form-group mb-3">
-                            <label for="">First Name</label>
-                            <input value="{{ $student->first_name }}" type="text" class="form-control"
-                                   name="first_name">
+                        <div class="form-group row">
+                            <label for="fname" class="col-sm-3 text-end control-label col-form-label">First Name</label>
+                            <div class="col-sm-9">
+                                <input value="{{ $student->first_name }}" type="text" class="form-control" id="fname" placeholder="First Name Here" name="first_name">
+                            </div>
                         </div>
-                        <div class="form-group mb-3">
-                            <label for="">Surname</label>
-                            <input value="{{ $student->surname }}" type="text" class="form-control" name="surname">
+                        <div class="form-group row">
+                            <label for="sname" class="col-sm-3 text-end control-label col-form-label">Surname</label>
+                            <div class="col-sm-9">
+                                <input value="{{ $student->surname }}" type="text" class="form-control" id="sname" placeholder="Surname Here" name="surname">
+                            </div>
                         </div>
-                        <div class="form-group mb-3">
-                            <label for="">Date of Birth</label>
-                            <input value="{{ $student->birth_date }}" type="date" class="form-control"
-                                   name="birth_date">
+                        <div class="form-group row">
+                            <label for="date-masl" class="col-sm-3 text-end control-label col-form-label">Date of Birth</label>
+                            <div class="col-sm-9">
+                                <input value="{{ $student->birth_date }}" type="text" name="birth_date" class="form-control date-inputmask" id="date-mask" placeholder="Enter Date"
+                              />
+                            </div>
                         </div>
-                        <div class="form-group mb-3">
-                            <label for="">Sex</label>
-                            <select name="sex" class="form-select">
-                                <option>Select Sex</option>
-                                <option
+                        <div class="form-group row">
+                            <label for="date-masl" class="col-sm-3 text-end control-label col-form-label">Sex</label>
+                            <div class="col-sm-9">
+                                <select name="sex" required class="select2 form-select shadow-none" style="width: 100%; height: 36px">
+                                    <option>Select Sex</option>
+                                    
+                                    <option
                                     @if($student->sex == "B")
                                     {{"selected"}}
                                     @endif
@@ -71,32 +52,34 @@
                                     @endif
                                     value="G">Girl
                                 </option>
-                            </select>
+                                   
+                                </select>
+                            </div>
                         </div>
-                        <div class="form-group mb-3">
-                            <label for="">Guardian Phone Number</label>
-                            <input value="{{ $student->guardian_phone_number}}" type="text" class="form-control"
-                                   name="guardian_phone_number">
+                        <div class="form-group row">
+                            <label for="gpn" class="col-sm-3 text-end control-label col-form-label">Guardian Phone</label>
+                            <div class="col-sm-9">
+                                <input value="{{ $student->guardian_phone_number}}" type="text" class="form-control" id="gpn" placeholder="Guardian phone Number Here" name="guardian_phone_number">
+                            </div>
                         </div>
-                        <div class="form-group mb-3">
-                            <label for="">Address</label>
-                            <input value="{{ $student->address }}" type="text" class="form-control" name="address">
+                    
+                        <div class="form-group row">
+                            <label for="address" class="col-sm-3 text-end control-label col-form-label">Guardian Address</label>
+                            <div class="col-sm-9">
+                                <input value="{{ $student->address }}" type="text" class="form-control" id="address" placeholder="Address Here" name="address">
+                            </div>
                         </div>
-                        <div class="form-group mb-3">
-                            <button type="submit" class="btn btn-primary">UPDATE</button>
+              
+                    </div>
+                    <div class="border-top">
+                        <div class="card-body">
+                            <button type="submit" class="btn btn-primary">
+                                UPDATE
+                            </button>
                         </div>
-                    </form>
-                </div>
+                    </div>
+                </form>
             </div>
-
         </div>
     </div>
-</div>
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-
-</body>
-</html>
+@endsection

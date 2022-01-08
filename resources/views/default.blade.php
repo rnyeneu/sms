@@ -25,6 +25,9 @@
     <!-- Custom CSS -->
     <link href="{{  asset('custom//assets/libs/flot/css/float-chart.css') }}" rel="stylesheet"/>
     <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="{{  asset('custom/assets/libs/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css') }}"/>
+  <link rel="stylesheet" type="text/css" href="{{  asset('custom/assets/libs/select2/dist/css/select2.min.css') }}"/>
+<link href="{{  asset('custom/assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.css') }}" rel="stylesheet"/>
     <link href="{{  asset('custom/dist/css/style.min.css') }}" rel="stylesheet"/>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -607,9 +610,9 @@
                     <div class="ms-auto text-end">
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item"><a href="{{ url('/') }}">Home</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">
-                                    Library
+                                    Add students
                                 </li>
                             </ol>
                         </nav>
@@ -672,5 +675,65 @@
 <script src="{{  asset('custom/assets/libs/flot/jquery.flot.crosshair.js') }}"></script>
 <script src="{{  asset('custom/assets/libs/flot.tooltip/js/jquery.flot.tooltip.min.js') }}"></script>
 <script src="{{  asset('custom/dist/js/pages/chart/chart-page-init.js') }}"></script>
+<script src="{{  asset('custom/assets/libs/inputmask/dist/min/jquery.inputmask.bundle.min.js') }}"></script>
+<script src="{{  asset('custom/assets/libs/select2/dist/js/select2.full.min.js') }}"></script>
+<script src="{{  asset('custom/assets/libs/select2/dist/js/select2.min.js') }}"></script>
+<script src="{{  asset('custom/dist/js/pages/mask/mask.init.js') }}"></script>
+<script src="{{  asset('custom/assets/libs/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js') }}"></script>
+<script src="{{  asset('custom/assets/extra-libs/DataTables/datatables.min.js') }}"></script>
+<script>
+  /****************************************
+   *       Basic Table                   *
+   ****************************************/
+  $("#zero_config").DataTable();
+</script>
+<script>
+    //***********************************//
+    // For select 2
+    //***********************************//
+    $(".select2").select2();
+
+    /*colorpicker*/
+    $(".demo").each(function () {
+      //
+      // Dear reader, it's actually very easy to initialize MiniColors. For example:
+      //
+      //  $(selector).minicolors();
+      //
+      // The way I've done it below is just for the demo, so don't get confused
+      // by it. Also, data- attributes aren't supported at this time...they're
+      // only used for this demo.
+      //
+      $(this).minicolors({
+        control: $(this).attr("data-control") || "hue",
+        position: $(this).attr("data-position") || "bottom left",
+
+        change: function (value, opacity) {
+          if (!value) return;
+          if (opacity) value += ", " + opacity;
+          if (typeof console === "object") {
+            console.log(value);
+          }
+        },
+        theme: "bootstrap",
+      });
+    });
+    /*datwpicker*/
+    jQuery(".mydatepicker").datepicker();
+    jQuery("#datepicker-autoclose").datepicker({
+      autoclose: true,
+      todayHighlight: true,
+    });
+    var quill = new Quill("#editor", {
+      theme: "snow",
+    });
+  </script>
+   <script type="text/javascript">
+    $("document").ready(function(){
+      setTimeout(function(){
+        $("div.alert").remove();
+    }, 3000);
+  });
+  </script>
 </body>
 </html>
