@@ -25,13 +25,13 @@ class StudentsController extends Controller
      */
     public function create()
     {
-        return view('student.create');
+        return view('student.add')->with('studentTitle', 'Students');
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
@@ -45,13 +45,13 @@ class StudentsController extends Controller
         $student->guardian_phone_number = $request->input('guardian_phone_number');
         $student->address = $request->input('address');
         $student->save();
-        return redirect('student')->with('status','A student added successfully');
+        return redirect('student')->with('status', 'A student added successfully');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function show($id)
@@ -63,20 +63,20 @@ class StudentsController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
     {
         $student = Student::find($id);
-        return view('student.edit', ['student' => $student ]);
+        return view('student.edit', ['student' => $student]);
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param \Illuminate\Http\Request $request
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
@@ -90,19 +90,19 @@ class StudentsController extends Controller
         $student->guardian_phone_number = $request->input('guardian_phone_number');
         $student->address = $request->input('address');
         $student->update();
-        return redirect('student')->with('status','A student updated successfully');
+        return redirect('student')->with('status', 'A student updated successfully');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
     {
         $student = Student::find($id);
         $student->delete();
-        return redirect('student')->with('status','A student deleted successfully');
+        return redirect('student')->with('status', 'A student deleted successfully');
     }
 }
