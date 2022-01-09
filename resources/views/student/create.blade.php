@@ -2,9 +2,9 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from flatable.phoenixcoded.net/default/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 Jan 2019 11:25:26 GMT -->
+<!-- Mirrored from flatable.phoenixcoded.net/default/form-elements-add-on.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 Jan 2019 11:52:45 GMT -->
 <head>
-<title>Flat Able - Premium Admin Template</title>
+<title>Flat Able - Premium Admin Template by Phoenixcoded</title>
 
 
 <!--[if lt IE 9]>
@@ -13,9 +13,11 @@
       <![endif]-->
 
 <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="Phoenixcoded">
+<meta name="keywords" content=", Flat ui, Admin , Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app">
+<meta name="author" content="Phoenixcoded">
 
 <link rel="icon" href="{{  asset('custom/assets/images/favicon.ico') }}" type="image/x-icon">
 
@@ -31,13 +33,10 @@
 
 <link rel="stylesheet" type="text/css" href="{{  asset('custom/assets/pages/menu-search/css/component.css') }}">
 
-<link rel="stylesheet" type="text/css" href="{{  asset('custom/assets/pages/dashboard/horizontal-timeline/css/style.css') }}">
-
-<link rel="stylesheet" type="text/css" href="{{  asset('custom/assets/pages/dashboard/amchart/css/amchart.css') }}">
-
-<link rel="stylesheet" type="text/css" href="{{  asset('custom/assets/pages/flag-icon/flag-icon.min.css') }}">
-
 <link rel="stylesheet" type="text/css" href="{{  asset('custom/assets/css/style.css') }}">
+<link rel="stylesheet" type="text/css" href="{{  asset('custom/assets/pages/menu-search/css/component.css') }}">
+
+<link rel="stylesheet" href="{{  asset('custom/bower_components/select2/dist/css/select2.min.css') }}" />
 
 <link rel="stylesheet" type="text/css" href="{{  asset('custom/assets/css/color/color-1.css') }}" id="color" />
 <link rel="stylesheet" type="text/css" href="{{  asset('custom/assets/css/linearicons.css') }}">
@@ -53,7 +52,6 @@
 </div>
 </div>
 
-
 <div id="pcoded" class="pcoded">
 <div class="pcoded-overlay-box"></div>
 <div class="pcoded-container navbar-wrapper">
@@ -67,7 +65,7 @@
 <i class="ti-search"></i>
 </a>
 <a href="index-2.html">
-<img class="img-fluid" src="{{  asset('custom/assets/images/logo.png') }}" alt="Theme-Logo" />
+<img class="img-fluid" src="assets/images/logo.png" alt="Theme-Logo" />
 </a>
 <a class="mobile-options">
 <i class="ti-more"></i>
@@ -160,19 +158,19 @@ Mega
 <li class="col-sm-3">
 <h6 class="mega-menu-title">Gallery</h6>
 <div class="row m-b-20">
-<div class="col-sm-4"><img class="img-fluid img-thumbnail" src="{{  asset('custom/assets/images/mega-menu/01.jpg') }}" alt="Gallery-1">
+<div class="col-sm-4"><img class="img-fluid img-thumbnail" src="assets/images/mega-menu/01.jpg" alt="Gallery-1">
 </div>
-<div class="col-sm-4"><img class="img-fluid img-thumbnail" src="{{  asset('custom/assets/images/mega-menu/02.jpg') }}" alt="Gallery-2">
+<div class="col-sm-4"><img class="img-fluid img-thumbnail" src="assets/images/mega-menu/02.jpg" alt="Gallery-2">
 </div>
-<div class="col-sm-4"><img class="img-fluid img-thumbnail" src="{{  asset('custom/assets/images/mega-menu/03.jpg') }}" alt="Gallery-3">
+<div class="col-sm-4"><img class="img-fluid img-thumbnail" src="assets/images/mega-menu/03.jpg" alt="Gallery-3">
 </div>
 </div>
 <div class="row m-b-20">
-<div class="col-sm-4"><img class="img-fluid img-thumbnail" src="{{  asset('custom/assets/images/mega-menu/04.jpg') }}" alt="Gallery-4">
+<div class="col-sm-4"><img class="img-fluid img-thumbnail" src="assets/images/mega-menu/04.jpg" alt="Gallery-4">
 </div>
-<div class="col-sm-4"><img class="img-fluid img-thumbnail" src="{{  asset('custom/assets/images/mega-menu/05.jpg') }}" alt="Gallery-5">
+<div class="col-sm-4"><img class="img-fluid img-thumbnail" src="assets/images/mega-menu/05.jpg" alt="Gallery-5">
 </div>
-<div class="col-sm-4"><img class="img-fluid img-thumbnail" src="{{  asset('custom/assets/images/mega-menu/06.jpg') }}" alt="Gallery-6">
+<div class="col-sm-4"><img class="img-fluid img-thumbnail" src="assets/images/mega-menu/06.jpg" alt="Gallery-6">
 </div>
 </div>
 <button class="btn btn-primary btn-sm btn-block">Browse Gallery</button>
@@ -204,7 +202,7 @@ Mega
 <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
 </div>
 </div>
- </div>
+</div>
 </li>
 </ul>
 </li>
@@ -224,7 +222,7 @@ Mega
 <a href="#" data-lng="es">
 <i class="flag-icon flag-icon-es m-r-5"></i> Spanish
 </a>
-</li>
+ </li>
 <li>
 <a href="#" data-lng="pt">
 <i class="flag-icon flag-icon-pt m-r-5"></i> Portuguese
@@ -249,9 +247,9 @@ Mega
 </li>
 <li>
 <div class="media">
-<img class="d-flex align-self-center" src="{{  asset('custom/assets/images/user.png') }}" alt="Generic placeholder image">
+<img class="d-flex align-self-center" src="assets/images/user.png" alt="Generic placeholder image">
 <div class="media-body">
- <h5 class="notification-user">John Doe</h5>
+<h5 class="notification-user">John Doe</h5>
 <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
 <span class="notification-time">30 minutes ago</span>
 </div>
@@ -259,7 +257,7 @@ Mega
 </li>
 <li>
 <div class="media">
-<img class="d-flex align-self-center" src="{{  asset('custom/assets/images/user.png') }}" alt="Generic placeholder image">
+<img class="d-flex align-self-center" src="assets/images/user.png" alt="Generic placeholder image">
 <div class="media-body">
 <h5 class="notification-user">Joseph William</h5>
 <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
@@ -268,8 +266,8 @@ Mega
 </div>
 </li>
 <li>
-<div class="media">
-<img class="d-flex align-self-center" src="{{  asset('custom/assets/images/user.png') }}" alt="Generic placeholder image">
+ <div class="media">
+<img class="d-flex align-self-center" src="assets/images/user.png" alt="Generic placeholder image">
 <div class="media-body">
 <h5 class="notification-user">Sara Soudein</h5>
 <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
@@ -287,7 +285,7 @@ Mega
 </li>
 <li class="user-profile header-notification">
 <a href="#!">
-<img src="{{  asset('custom/assets/images/user.png') }}" alt="User-Profile-Image">
+<img src="assets/images/user.png" alt="User-Profile-Image">
 <span>John Doe</span>
 <i class="ti-angle-down"></i>
 </a>
@@ -315,7 +313,7 @@ Mega
 <li>
 <a href="#!">
 <i class="ti-layout-sidebar-left"></i> Logout
-</a>
+ </a>
 </li>
 </ul>
 </li>
@@ -341,22 +339,22 @@ Mega
 <div class="dummy-column">
 <h2>Popular</h2>
 <a class="dummy-media-object" href="#!">
-<img src="{{  asset('custom/assets/images/avatar-1.png') }}" alt="PagePreloadingEffect" />
+<img src="assets/images/avatar-1.png" alt="PagePreloadingEffect" />
 <h3>Page Preloading Effect</h3>
 </a>
 <a class="dummy-media-object" href="#!">
-<img src="{{  asset('custom/assets/images/avatar-1.png') }}" alt="DraggableDualViewSlideshow" />
+<img src="assets/images/avatar-1.png" alt="DraggableDualViewSlideshow" />
 <h3>Draggable Dual-View Slideshow</h3>
 </a>
 </div>
 <div class="dummy-column">
 <h2>Recent</h2>
 <a class="dummy-media-object" href="#!">
-<img src="{{  asset('custom/assets/images/avatar-1.png') }}" alt="TooltipStylesInspiration" />
+<img src="assets/images/avatar-1.png" alt="TooltipStylesInspiration" />
 <h3>Tooltip Styles Inspiration</h3>
- </a>
+</a>
 <a class="dummy-media-object" href="#!">
-<img src="{{  asset('custom/assets/images/avatar-1.png') }}" alt="NotificationStyles" />
+<img src="assets/images/avatar-1.png" alt="NotificationStyles" />
 <h3>Notification Styles Inspiration</h3>
 </a>
 </div>
@@ -385,7 +383,7 @@ Mega
 <div class="main-friend-list">
 <div class="media userlist-box" data-id="1" data-status="online" data-username="Josephin Doe" data-toggle="tooltip" data-placement="left" title="Josephin Doe">
 <a class="media-left" href="#!">
-<img class="media-object img-circle" src="{{  asset('custom/assets/images/avatar-1.png') }}" alt="Generic placeholder image">
+<img class="media-object img-circle" src="assets/images/avatar-1.png" alt="Generic placeholder image">
 <div class="live-status bg-success"></div>
 </a>
 <div class="media-body">
@@ -394,7 +392,7 @@ Mega
 </div>
 <div class="media userlist-box" data-id="2" data-status="online" data-username="Lary Doe" data-toggle="tooltip" data-placement="left" title="Lary Doe">
 <a class="media-left" href="#!">
-<img class="media-object img-circle" src="{{  asset('custom/assets/images/task/task-u1.jpg') }}" alt="Generic placeholder image">
+<img class="media-object img-circle" src="assets/images/task/task-u1.jpg" alt="Generic placeholder image">
 <div class="live-status bg-success"></div>
 </a>
 <div class="media-body">
@@ -403,7 +401,7 @@ Mega
 </div>
 <div class="media userlist-box" data-id="3" data-status="online" data-username="Alice" data-toggle="tooltip" data-placement="left" title="Alice">
 <a class="media-left" href="#!">
-<img class="media-object img-circle" src="{{  asset('custom/assets/images/avatar-2.png') }}" alt="Generic placeholder image">
+<img class="media-object img-circle" src="assets/images/avatar-2.png" alt="Generic placeholder image">
 <div class="live-status bg-success"></div>
 </a>
 <div class="media-body">
@@ -412,7 +410,7 @@ Mega
 </div>
 <div class="media userlist-box" data-id="4" data-status="online" data-username="Alia" data-toggle="tooltip" data-placement="left" title="Alia">
 <a class="media-left" href="#!">
-<img class="media-object img-circle" src="{{  asset('custom/assets/images/task/task-u2.jpg') }}" alt="Generic placeholder image">
+<img class="media-object img-circle" src="assets/images/task/task-u2.jpg" alt="Generic placeholder image">
 <div class="live-status bg-success"></div>
 </a>
 <div class="media-body">
@@ -438,7 +436,7 @@ Mega
 </div>
 </div>
 <div class="media userlist-box" data-id="7" data-status="online" data-username="Irina Shayk" data-toggle="tooltip" data-placement="left" title="Irina Shayk">
-<a class="media-left" href="#!">
+ <a class="media-left" href="#!">
 <img class="media-object img-circle" src="assets/images/avatar-4.png" alt="Generic placeholder image">
 <div class="live-status bg-success"></div>
 </a>
@@ -492,7 +490,7 @@ Mega
 </div>
 </div>
 <div class="media userlist-box" data-id="13" data-status="offline" data-username="Sara" data-toggle="tooltip" data-placement="left" title="Sara">
-<a class="media-left" href="#!">
+ <a class="media-left" href="#!">
 <img class="media-object img-circle" src="assets/images/task/task-u3.jpg" alt="Generic placeholder image">
 <div class="live-status bg-danger"></div>
 </a>
@@ -520,7 +518,7 @@ Mega
 </div>
 </div>
 </div>
- </div>
+</div>
 </div>
 </div>
 
@@ -571,7 +569,7 @@ Mega
 <div class="pcoded-inner-navbar main-menu">
 <div class="">
 <div class="main-menu-header">
-<img class="img-40" src="{{  asset('custom/assets/images/user.png') }}" alt="User-Profile-Image">
+<img class="img-40" src="assets/images/user.png" alt="User-Profile-Image">
 <div class="user-details">
 <span>John Doe</span>
 <span id="more-details">UX Designer<i class="ti-angle-down"></i></span>
@@ -589,14 +587,14 @@ Mega
 </div>
 <div class="pcoded-navigatio-lavel" data-i18n="nav.category.navigation" menu-title-theme="theme5">Navigation</div>
 <ul class="pcoded-item pcoded-left-item">
-<li class="pcoded-hasmenu active pcoded-trigger">
+<li class="pcoded-hasmenu">
 <a href="javascript:void(0)">
 <span class="pcoded-micon"><i class="ti-home"></i></span>
 <span class="pcoded-mtext" data-i18n="nav.dash.main">Dashboard</span>
 <span class="pcoded-mcaret"></span>
 </a>
 <ul class="pcoded-submenu">
-<li class="active">
+<li class="">
 <a href="index-2.html">
 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
 <span class="pcoded-mtext" data-i18n="nav.dash.default">Default</span>
@@ -828,7 +826,7 @@ Mega
 <span class="pcoded-mtext">Generic Class</span>
 <span class="pcoded-mcaret"></span>
 </a>
- </li>
+</li>
 <li class=" ">
 <a href="tabs.html" data-i18n="nav.basic-components.tabs">
 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
@@ -865,7 +863,7 @@ Mega
 </a>
 </li>
 <li class=" ">
- <a href="list.html" data-i18n="nav.basic-components.list">
+<a href="list.html" data-i18n="nav.basic-components.list">
 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
 <span class="pcoded-mtext">List</span>
 <span class="pcoded-mcaret"></span>
@@ -1136,7 +1134,7 @@ Mega
 </ul>
 <div class="pcoded-navigatio-lavel" data-i18n="nav.category.forms" menu-title-theme="theme5">Forms</div>
 <ul class="pcoded-item pcoded-left-item">
-<li class="pcoded-hasmenu">
+<li class="pcoded-hasmenu active pcoded-trigger">
 <a href="javascript:void(0)" data-i18n="nav.form-components.main">
 <span class="pcoded-micon"><i class="ti-layers"></i></span>
 <span class="pcoded-mtext">Form Components</span>
@@ -1150,7 +1148,7 @@ Mega
 <span class="pcoded-mcaret"></span>
 </a>
 </li>
-<li class=" ">
+<li class="active ">
 <a href="form-elements-add-on.html" data-i18n="nav.form-components.form-elements-add-on">
 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
 <span class="pcoded-mtext">Form-Elements-Add-On</span>
@@ -1199,7 +1197,7 @@ Mega
 <li class=" ">
 <a href="json-forms/clubs.html" data-i18n="nav.json-form.clubs-view">
 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
- <span class="pcoded-mtext">Clubs(View Selector)</span>
+<span class="pcoded-mtext">Clubs(View Selector)</span>
 <span class="pcoded-mcaret"></span>
 </a>
 </li>
@@ -1331,7 +1329,7 @@ Mega
 <span class="pcoded-mtext">Contact Form</span>
 <span class="pcoded-mcaret"></span>
 </a>
-</li>
+ </li>
 <li class=" ">
 <a href="ready-job-application-form.html" data-i18n="nav.ready-to-use.job-application-form">
 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
@@ -1343,7 +1341,7 @@ Mega
 <a href="ready-js-addition-form.html" data-i18n="nav.ready-to-use.jS-addition-form">
 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
 <span class="pcoded-mtext">JS Addition Form</span>
- <span class="pcoded-mcaret"></span>
+<span class="pcoded-mcaret"></span>
 </a>
 </li>
 <li class=" ">
@@ -1416,7 +1414,7 @@ Mega
 </li>
 <li class=" ">
 <a href="bs-table-sizing.html" data-i18n="nav.bootstrap-table.sizing-table">
- <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+<span class="pcoded-micon"><i class="ti-angle-right"></i></span>
 <span class="pcoded-mtext">Sizing Table</span>
 <span class="pcoded-mcaret"></span>
 </a>
@@ -1587,7 +1585,7 @@ Mega
 <span class="pcoded-mtext">Key Table</span>
 <span class="pcoded-mcaret"></span>
 </a>
-</li>
+ </li>
 <li class=" ">
 <a href="dt-ext-responsive.html" data-i18n="nav.data-table-extensions.responsive">
 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
@@ -1669,7 +1667,7 @@ Mega
 </li>
 <li class="">
 <a href="handson-cell-types.html" data-i18n="nav.handson-table.cell-types">
- <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+<span class="pcoded-micon"><i class="ti-angle-right"></i></span>
 <span class="pcoded-mtext">Cell Types</span>
 <span class="pcoded-mcaret"></span>
 </a>
@@ -1705,74 +1703,7 @@ Mega
 </a>
 </li>
 </ul>
-<div class="pcoded-navigatio-lavel" data-i18n="nav.category.chart-and-maps" menu-title-theme="theme5">Chart And Maps</div>
-<ul class="pcoded-item pcoded-left-item">
-<li class="pcoded-hasmenu ">
-<a href="javascript:void(0)" data-i18n="nav.charts.main"> <span class="pcoded-micon"><i class="ti-bar-chart-alt"></i></span> <span class="pcoded-mtext">Charts</span> <span class="pcoded-mcaret"></span> </a>
-<ul class="pcoded-submenu">
-<li class="">
-<a href="chart-google.html" data-i18n="nav.charts.google-chart"> <span class="pcoded-micon"><i class="ti-angle-right"></i></span> <span class="pcoded-mtext">Google Chart</span> <span class="pcoded-mcaret"></span> </a>
-</li>
-<li class="">
-<a href="chart-echart.html" data-i18n="nav.charts.echarts"> <span class="pcoded-micon"><i class="ti-angle-right"></i></span> <span class="pcoded-mtext">Echarts</span> <span class="pcoded-mcaret"></span> </a>
-</li>
-<li class="">
-<a href="chart-chartjs.html" data-i18n="nav.charts.chartjs"> <span class="pcoded-micon"><i class="ti-angle-right"></i></span> <span class="pcoded-mtext">ChartJs</span> <span class="pcoded-mcaret"></span> </a>
-</li>
-<li class="">
-<a href="chart-list.html" data-i18n="nav.charts.list-chart"> <span class="pcoded-micon"><i class="ti-angle-right"></i></span> <span class="pcoded-mtext">List Chart</span> <span class="pcoded-mcaret"></span> </a>
-</li>
-<li class="">
-<a href="chart-float.html" data-i18n="nav.charts.float-chart"> <span class="pcoded-micon"><i class="ti-angle-right"></i></span> <span class="pcoded-mtext">Float Chart</span> <span class="pcoded-mcaret"></span> </a>
-</li>
-<li class="">
-<a href="chart-knob.html" data-i18n="nav.charts.know-chart"> <span class="pcoded-micon"><i class="ti-angle-right"></i></span> <span class="pcoded-mtext">Know chart</span> <span class="pcoded-mcaret"></span> </a>
-</li>
-<li class="">
-<a href="chart-morris.html" data-i18n="nav.charts.morris-chart"> <span class="pcoded-micon"><i class="ti-angle-right"></i></span> <span class="pcoded-mtext">Morris Chart</span> <span class="pcoded-mcaret"></span> </a>
-</li>
-<li class="">
-<a href="chart-nvd3.html" data-i18n="nav.charts.nvd3-chart"> <span class="pcoded-micon"><i class="ti-angle-right"></i></span> <span class="pcoded-mtext">Nvd3 Chart</span> <span class="pcoded-mcaret"></span> </a>
-</li>
-<li class="">
-<a href="chart-peity.html" data-i18n="nav.charts.peity-chart"> <span class="pcoded-micon"><i class="ti-angle-right"></i></span> <span class="pcoded-mtext">Peity Chart</span> <span class="pcoded-mcaret"></span> </a>
-</li>
-<li class="">
-<a href="chart-radial.html" data-i18n="nav.charts.radial chart"> <span class="pcoded-micon"><i class="ti-angle-right"></i></span> <span class="pcoded-mtext">Radial Chart</span> <span class="pcoded-mcaret"></span> </a>
-</li>
-<li class="">
-<a href="chart-rickshaw.html" data-i18n="nav.charts.rickshaw-chart"> <span class="pcoded-micon"><i class="ti-angle-right"></i></span> <span class="pcoded-mtext">Rickshaw Chart</span> <span class="pcoded-mcaret"></span> </a>
-</li>
-<li class="">
-<a href="chart-sparkline.html" data-i18n="nav.charts.sparkline-chart"> <span class="pcoded-micon"><i class="ti-angle-right"></i></span> <span class="pcoded-mtext">Sparkline Chart</span> <span class="pcoded-mcaret"></span> </a>
-</li>
-<li class="">
-<a href="chart-c3.html" data-i18n="nav.charts.c3-chart"> <span class="pcoded-micon"><i class="ti-angle-right"></i></span> <span class="pcoded-mtext">C3 Chart</span> <span class="pcoded-mcaret"></span> </a>
-</li>
-</ul>
-</li>
-<li class="pcoded-hasmenu ">
-<a href="javascript:void(0)" data-i18n="nav.maps.main"> <span class="pcoded-micon"><i class="ti-map-alt"></i></span> <span class="pcoded-mtext">Maps</span> <span class="pcoded-mcaret"></span> </a>
-<ul class="pcoded-submenu">
-<li class="">
-<a href="map-google.html" data-i18n="nav.maps.google-maps"> <span class="pcoded-micon"><i class="ti-angle-right"></i></span> <span class="pcoded-mtext">Google Maps</span> <span class="pcoded-mcaret"></span> </a>
-</li>
-<li class="">
-<a href="map-vector.html" data-i18n="nav.maps.vector-map"> <span class="pcoded-micon"><i class="ti-angle-right"></i></span> <span class="pcoded-mtext">Vector Maps</span> <span class="pcoded-mcaret"></span> </a>
-</li>
-<li class="">
-<a href="map-api.html" data-i18n="nav.maps.google-map-api"> <span class="pcoded-micon"><i class="ti-angle-right"></i></span> <span class="pcoded-mtext">Google Map Search API</span> <span class="pcoded-mcaret"></span> </a>
-</li>
-<li class="">
-<a href="location.html" data-i18n="nav.maps.location"> <span class="pcoded-micon"><i class="ti-angle-right"></i></span> <span class="pcoded-mtext">Location</span> <span class="pcoded-mcaret"></span> </a>
-</li>
-</ul>
-</li>
-<li class="">
-<a href="landingpage/index.html" target="_blank" data-i18n="nav.landing-page.main"> <span class="pcoded-micon"><i class="ti-mobile"></i></span> <span class="pcoded-mtext">Landing Page</span> <span class="pcoded-mcaret"></span> </a>
-</li>
-</ul>
-<div class="pcoded-navigatio-lavel" data-i18n="nav.category.pages" menu-title-theme="theme5">Pages</div>
+<div class="pcoded-navigatio-lavel" data-i18n="nav.category.chart-and-maps" menu-title-theme="theme5">Chart And Maps</div> <ul class="pcoded-item pcoded-left-item"> <li class="pcoded-hasmenu "> <a href="javascript:void(0)" data-i18n="nav.charts.main"> <span class="pcoded-micon"><i class="ti-bar-chart-alt"></i></span> <span class="pcoded-mtext">Charts</span> <span class="pcoded-mcaret"></span> </a> <ul class="pcoded-submenu"> <li class=""> <a href="chart-google.html" data-i18n="nav.charts.google-chart"> <span class="pcoded-micon"><i class="ti-angle-right"></i></span> <span class="pcoded-mtext">Google Chart</span> <span class="pcoded-mcaret"></span> </a> </li> <li class=""> <a href="chart-echart.html" data-i18n="nav.charts.echarts"> <span class="pcoded-micon"><i class="ti-angle-right"></i></span> <span class="pcoded-mtext">Echarts</span> <span class="pcoded-mcaret"></span> </a> </li> <li class=""> <a href="chart-chartjs.html" data-i18n="nav.charts.chartjs"> <span class="pcoded-micon"><i class="ti-angle-right"></i></span> <span class="pcoded-mtext">ChartJs</span> <span class="pcoded-mcaret"></span> </a> </li> <li class=""> <a href="chart-list.html" data-i18n="nav.charts.list-chart"> <span class="pcoded-micon"><i class="ti-angle-right"></i></span> <span class="pcoded-mtext">List Chart</span> <span class="pcoded-mcaret"></span> </a> </li> <li class=""> <a href="chart-float.html" data-i18n="nav.charts.float-chart"> <span class="pcoded-micon"><i class="ti-angle-right"></i></span> <span class="pcoded-mtext">Float Chart</span> <span class="pcoded-mcaret"></span> </a> </li> <li class=""> <a href="chart-knob.html" data-i18n="nav.charts.know-chart"> <span class="pcoded-micon"><i class="ti-angle-right"></i></span> <span class="pcoded-mtext">Know chart</span> <span class="pcoded-mcaret"></span> </a> </li> <li class=""> <a href="chart-morris.html" data-i18n="nav.charts.morris-chart"> <span class="pcoded-micon"><i class="ti-angle-right"></i></span> <span class="pcoded-mtext">Morris Chart</span> <span class="pcoded-mcaret"></span> </a> </li> <li class=""> <a href="chart-nvd3.html" data-i18n="nav.charts.nvd3-chart"> <span class="pcoded-micon"><i class="ti-angle-right"></i></span> <span class="pcoded-mtext">Nvd3 Chart</span> <span class="pcoded-mcaret"></span> </a> </li> <li class=""> <a href="chart-peity.html" data-i18n="nav.charts.peity-chart"> <span class="pcoded-micon"><i class="ti-angle-right"></i></span> <span class="pcoded-mtext">Peity Chart</span> <span class="pcoded-mcaret"></span> </a> </li> <li class=""> <a href="chart-radial.html" data-i18n="nav.charts.radial chart"> <span class="pcoded-micon"><i class="ti-angle-right"></i></span> <span class="pcoded-mtext">Radial Chart</span> <span class="pcoded-mcaret"></span> </a> </li> <li class=""> <a href="chart-rickshaw.html" data-i18n="nav.charts.rickshaw-chart"> <span class="pcoded-micon"><i class="ti-angle-right"></i></span> <span class="pcoded-mtext">Rickshaw Chart</span> <span class="pcoded-mcaret"></span> </a> </li> <li class=""> <a href="chart-sparkline.html" data-i18n="nav.charts.sparkline-chart"> <span class="pcoded-micon"><i class="ti-angle-right"></i></span> <span class="pcoded-mtext">Sparkline Chart</span> <span class="pcoded-mcaret"></span> </a> </li> <li class=""> <a href="chart-c3.html" data-i18n="nav.charts.c3-chart"> <span class="pcoded-micon"><i class="ti-angle-right"></i></span> <span class="pcoded-mtext">C3 Chart</span> <span class="pcoded-mcaret"></span> </a> </li> </ul> </li> <li class="pcoded-hasmenu "> <a href="javascript:void(0)" data-i18n="nav.maps.main"> <span class="pcoded-micon"><i class="ti-map-alt"></i></span> <span class="pcoded-mtext">Maps</span> <span class="pcoded-mcaret"></span> </a> <ul class="pcoded-submenu"> <li class=""> <a href="map-google.html" data-i18n="nav.maps.google-maps"> <span class="pcoded-micon"><i class="ti-angle-right"></i></span> <span class="pcoded-mtext">Google Maps</span> <span class="pcoded-mcaret"></span> </a> </li> <li class=""> <a href="map-vector.html" data-i18n="nav.maps.vector-map"> <span class="pcoded-micon"><i class="ti-angle-right"></i></span> <span class="pcoded-mtext">Vector Maps</span> <span class="pcoded-mcaret"></span> </a> </li> <li class=""> <a href="map-api.html" data-i18n="nav.maps.google-map-api"> <span class="pcoded-micon"><i class="ti-angle-right"></i></span> <span class="pcoded-mtext">Google Map Search API</span> <span class="pcoded-mcaret"></span> </a> </li> <li class=""> <a href="location.html" data-i18n="nav.maps.location"> <span class="pcoded-micon"><i class="ti-angle-right"></i></span> <span class="pcoded-mtext">Location</span> <span class="pcoded-mcaret"></span> </a> </li> </ul> </li> <li class=""> <a href="landingpage/index.html" target="_blank" data-i18n="nav.landing-page.main"> <span class="pcoded-micon"><i class="ti-mobile"></i></span> <span class="pcoded-mtext">Landing Page</span> <span class="pcoded-mcaret"></span> </a> </li> </ul> <div class="pcoded-navigatio-lavel" data-i18n="nav.category.pages" menu-title-theme="theme5">Pages</div>
 <ul class="pcoded-item pcoded-left-item">
 <li class="pcoded-hasmenu ">
 <a href="javascript:void(0)" data-i18n="nav.authentication.main">
@@ -1993,7 +1924,7 @@ Mega
 <span class="pcoded-mcaret"></span>
 </a>
 </li>
-<li class="">
+ <li class="">
 <a href="product-edit.html" data-i18n="nav.e-commerce.product-edit">
 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
 <span class="pcoded-mtext">Product Edit</span>
@@ -2025,7 +1956,7 @@ Mega
 </li>
 <li class="pcoded-hasmenu ">
 <a href="javascript:void(0)" data-i18n="nav.email.main">
- <span class="pcoded-micon"><i class="ti-email"></i></span>
+<span class="pcoded-micon"><i class="ti-email"></i></span>
 <span class="pcoded-mtext">E-Email</span>
 <span class="pcoded-mcaret"></span>
 </a>
@@ -2335,7 +2266,7 @@ Mega
 </li>
 </ul>
 </li>
-</ul>
+</ul>>
 <ul class="pcoded-item pcoded-left-item">
 <li class="pcoded-hasmenu ">
 <a href="javascript:void(0)" data-i18n="nav.invoice.main">
@@ -2381,7 +2312,7 @@ Mega
 <span class="pcoded-mcaret"></span>
 </a>
 </li>
-<li class="">
+ <li class="">
 <a href="event-clndr.html" data-i18n="nav.clnder.clnder">
 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
 <span class="pcoded-mtext">CLNDER</span>
@@ -2536,721 +2467,131 @@ Mega
 </nav>
 <div class="pcoded-content">
 <div class="pcoded-inner-content">
+
 <div class="main-body">
 <div class="page-wrapper">
+
 <div class="page-header">
 <div class="page-header-title">
-<h4>Dashboard</h4>
+<h4>Add Student</h4>
+
 </div>
 <div class="page-header-breadcrumb">
 <ul class="breadcrumb-title">
 <li class="breadcrumb-item">
-<a href="index-2.html">
+<a href="{{ url('/') }}">
 <i class="icofont icofont-home"></i>
 </a>
 </li>
-<li class="breadcrumb-item"><a href="#!">Pages</a>
+<li class="breadcrumb-item"><a href="{{ url('student/') }}">All students</a>
 </li>
-<li class="breadcrumb-item"><a href="#!">Dashboard</a>
+<li class="breadcrumb-item">Add student
 </li>
 </ul>
 </div>
 </div>
+
+
 <div class="page-body">
-<div class="row">
-<div class="col-md-12 col-xl-4">
-
-<div class="card table-card">
-<div class="">
-<div class="row-table">
-<div class="col-sm-6 card-block-big br">
-<div class="row">
-<div class="col-sm-4">
-<i class="icofont icofont-eye-alt text-success"></i>
-</div>
-<div class="col-sm-8 text-center">
-<h5>10k</h5>
-<span>Visitors</span>
-</div>
-</div>
-</div>
-<div class="col-sm-6 card-block-big">
-<div class="row">
-<div class="col-sm-4">
-<i class="icofont icofont-ui-music text-danger"></i>
-</div>
-<div class="col-sm-8 text-center">
-<h5>100%</h5>
-<span>Volume</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="">
-<div class="row-table">
-<div class="col-sm-6 card-block-big br">
-<div class="row">
-<div class="col-sm-4">
-<i class="icofont icofont-files text-info"></i>
-</div>
-<div class="col-sm-8 text-center">
-<h5>2000 +</h5>
-<span>Files</span>
-</div>
-</div>
-</div>
-<div class="col-sm-6 card-block-big">
-<div class="row">
-<div class="col-sm-4">
-<i class="icofont icofont-envelope-open text-warning"></i>
-</div>
-<div class="col-sm-8 text-center">
-<h5>120</h5>
-<span>Mails</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-</div>
-<div class="col-md-12 col-xl-4">
-
-<div class="card table-card">
-<div class="">
-<div class="row-table">
-<div class="col-sm-6 card-block-big br">
-<div class="row">
-<div class="col-sm-4">
-<div id="barchart" style="height:40px;width:40px;"></div>
-</div>
-<div class="col-sm-8 text-center">
-<h5>1000</h5>
-<span>Shares</span>
-</div>
-</div>
-</div>
-<div class="col-sm-6 card-block-big">
-<div class="row ">
-<div class="col-sm-4">
-<i class="icofont icofont-network text-primary"></i>
-</div>
-<div class="col-sm-8 text-center">
-<h5>600</h5>
-<span>Network</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="">
-<div class="row-table">
-<div class="col-sm-6 card-block-big br">
-<div class="row ">
-<div class="col-sm-4">
-<div id="barchart2" style="height:40px;width:40px;"></div>
-</div>
-<div class="col-sm-8 text-center">
-<h5>350</h5>
-<span>Returns</span>
-</div>
-</div>
-</div>
-<div class="col-sm-6 card-block-big">
-<div class="row ">
-<div class="col-sm-4">
-<i class="icofont icofont-network-tower text-primary"></i>
-</div>
-<div class="col-sm-8 text-center">
-<h5>100%</h5>
-<span>Connections</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-</div>
-<div class="col-md-12 col-xl-4">
-
-<div class="card table-card widget-primary-card">
-<div class="">
-<div class="row-table">
-<div class="col-sm-3 card-block-big">
-<i class="icofont icofont-star"></i>
-</div>
-<div class="col-sm-9">
-<h4>4000 +</h4>
-<h6>Ratings Received</h6>
-</div>
-</div>
-</div>
-</div>
-
-
-<div class="card table-card widget-success-card">
-<div class="">
-<div class="row-table">
-<div class="col-sm-3 card-block-big">
-<i class="icofont icofont-trophy-alt"></i>
-</div>
-<div class="col-sm-9">
-<h4>17</h4>
-<h6>Achievements</h6>
-</div>
-</div>
-</div>
-</div>
-
-</div>
-<div class="col-lg-6">
-<div class="card">
-<div class="card-block">
-<div id="chartdiv"></div>
-</div>
-</div>
-</div>
-<div class="col-lg-6">
-<div class="card">
-<div class="card-block">
-<div class="cd-horizontal-timeline">
-<div class="timeline">
-<div class="events-wrapper">
-<div class="events">
-<ol>
-<li><a href="#0" data-date="16/01/2014" class="selected">16 Jan</a></li>
-<li><a href="#0" data-date="28/02/2014">28 Feb</a></li>
-<li><a href="#0" data-date="20/04/2014">20 Mar</a></li>
-<li><a href="#0" data-date="20/05/2014">20 May</a></li>
-<li><a href="#0" data-date="09/07/2014">09 Jul</a></li>
-<li><a href="#0" data-date="30/08/2014">30 Aug</a></li>
-<li><a href="#0" data-date="15/09/2014">15 Sep</a></li>
-<li><a href="#0" data-date="01/11/2014">01 Nov</a></li>
-<li><a href="#0" data-date="10/12/2014">10 Dec</a></li>
-<li><a href="#0" data-date="19/01/2015">29 Jan</a></li>
-<li><a href="#0" data-date="03/03/2015">3 Mar</a></li>
-</ol>
-<span class="filling-line" aria-hidden="true"></span>
-</div>
-
-</div>
-
-<ul class="cd-timeline-navigation">
-<li><a href="#0" class="prev inactive">Prev</a></li>
-<li><a href="#0" class="next">Next</a></li>
-</ul>
-
-</div>
-
-<div class="events-content">
-<ol>
-<li class="selected" data-date="16/01/2014">
-<h2>Horizontal Timeline</h2>
-<em>January 16th, 2014</em>
-<p class="m-b-0">
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi
-reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.Illum praesentium officia, fugit recusandae ipsa, quia
-velit nulla adipisci? Consequuntur aspernatur at,
-</p>
-<div class="m-t-20 d-timeline-btn">
-<button class="btn btn-danger">Read More</button>
-<button class="btn btn-primary f-right"><i class="icofont icofont-plus m-r-0"></i></button>
-</div>
-</li>
-<li data-date="28/02/2014">
-<h2>Event title here</h2>
-<em>February 28th, 2014</em>
-<p class="m-b-0">
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi
-reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.Illum praesentium officia, fugit recusandae ipsa, quia
-velit nulla adipisci? Consequuntur aspernatur at,
-</p>
-<div class="m-t-20 d-timeline-btn">
-<button class="btn btn-danger">Read More</button>
-<button class="btn btn-primary f-right"><i class="icofont icofont-plus m-r-0"></i></button>
-</div>
-</li>
-<li data-date="20/04/2014">
-<h2>Event title here</h2>
-<em>March 20th, 2014</em>
-<p class="m-b-0">
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi
-reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.Illum praesentium officia, fugit recusandae ipsa, quia
-velit nulla adipisci? Consequuntur aspernatur at,
-</p>
-<div class="m-t-20 d-timeline-btn">
-<button class="btn btn-danger">Read More</button>
-<button class="btn btn-primary f-right"><i class="icofont icofont-plus m-r-0"></i></button>
-</div>
-</li>
-<li data-date="20/05/2014">
-<h2>Event title here</h2>
-<em>May 20th, 2014</em>
-<p class="m-b-0">
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi
-reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.Illum praesentium officia, fugit recusandae ipsa, quia
-velit nulla adipisci? Consequuntur aspernatur at,
-</p>
-<div class="m-t-20 d-timeline-btn">
-<button class="btn btn-danger">Read More</button>
-<button class="btn btn-primary f-right"><i class="icofont icofont-plus m-r-0"></i></button>
-</div>
-</li>
-<li data-date="09/07/2014">
-<h2>Event title here</h2>
-<em>July 9th, 2014</em>
-<p class="m-b-0">
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi
-reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.Illum praesentium officia, fugit recusandae ipsa, quia
-velit nulla adipisci? Consequuntur aspernatur at,
-</p>
-<div class="m-t-20 d-timeline-btn">
-<button class="btn btn-danger">Read More</button>
- <button class="btn btn-primary f-right"><i class="icofont icofont-plus m-r-0"></i></button>
-</div>
-</li>
-<li data-date="30/08/2014">
-<h2>Event title here</h2>
-<em>August 30th, 2014</em>
-<p class="m-b-0">
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi
-reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.Illum praesentium officia, fugit recusandae ipsa, quia
-velit nulla adipisci? Consequuntur aspernatur at,
-</p>
-<div class="m-t-20 d-timeline-btn">
-<button class="btn btn-danger">Read More</button>
-<button class="btn btn-primary f-right"><i class="icofont icofont-plus m-r-0"></i></button>
-</div>
-</li>
-<li data-date="15/09/2014">
-<h2>Event title here</h2>
-<em>September 15th, 2014</em>
-<p class="m-b-0">
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi
-reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.Illum praesentium officia, fugit recusandae ipsa, quia
-velit nulla adipisci? Consequuntur aspernatur at,
-</p>
-<div class="m-t-20 d-timeline-btn">
-<button class="btn btn-danger">Read More</button>
-<button class="btn btn-primary f-right"><i class="icofont icofont-plus m-r-0"></i></button>
-</div>
-</li>
-<li data-date="01/11/2014">
-<h2>Event title here</h2>
-<em>November 1st, 2014</em>
-<p class="m-b-0">
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi
-reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.Illum praesentium officia, fugit recusandae ipsa, quia
-velit nulla adipisci? Consequuntur aspernatur at,
-</p>
-<div class="m-t-20 d-timeline-btn">
-<button class="btn btn-danger">Read More</button>
-<button class="btn btn-primary f-right"><i class="icofont icofont-plus m-r-0"></i></button>
-</div>
-</li>
-<li data-date="10/12/2014">
-<h2>Event title here</h2>
-<em>December 10th, 2014</em>
-<p class="m-b-0">
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi
-reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.Illum praesentium officia, fugit recusandae ipsa, quia
-velit nulla adipisci? Consequuntur aspernatur at,
-</p>
-<div class="m-t-20 d-timeline-btn">
-<button class="btn btn-danger">Read More</button>
-<button class="btn btn-primary f-right"><i class="icofont icofont-plus m-r-0"></i></button>
-</div>
-</li>
-<li data-date="19/01/2015">
-<h2>Event title here</h2>
-<em>January 19th, 2015</em>
-<p class="m-b-0">
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi
-reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.Illum praesentium officia, fugit recusandae ipsa, quia
-velit nulla adipisci? Consequuntur aspernatur at,
-</p>
-<div class="m-t-20 d-timeline-btn">
-<button class="btn btn-danger">Read More</button>
-<button class="btn btn-primary f-right"><i class="icofont icofont-plus m-r-0"></i></button>
-</div>
-</li>
-<li data-date="03/03/2015">
-<h2>Event title here</h2>
-<em>March 3rd, 2015</em>
-<p class="m-b-0">
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi
-reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.Illum praesentium officia, fugit recusandae ipsa, quia
-velit nulla adipisci? Consequuntur aspernatur at,
-</p>
-<div class="m-t-20 d-timeline-btn">
-<button class="btn btn-danger">Read More</button>
-<button class="btn btn-primary f-right"><i class="icofont icofont-plus m-r-0"></i></button>
-</div>
-</li>
-</ol>
-</div>
-
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-4">
-<div class="row">
-<div class="col-lg-12">
-<div class="card card-border-primary">
-<div class="card-header">
-<h5>John Doe </h5>
-
-<div class="dropdown-secondary dropdown f-right">
-<button class="btn btn-primary btn-mini dropdown-toggle waves-effect waves-light" type="button" id="dropdown6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Overdue</button>
-<div class="dropdown-menu" aria-labelledby="dropdown6" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
-<a class="dropdown-item waves-light waves-effect" href="#!"><span class="point-marker bg-danger"></span>Pending</a>
-<a class="dropdown-item waves-light waves-effect" href="#!"><span class="point-marker bg-warning"></span>Paid</a>
-<div class="dropdown-divider"></div>
-<a class="dropdown-item waves-light waves-effect active" href="#!"><span class="point-marker bg-success"></span>On Hold</a>
-<a class="dropdown-item waves-light waves-effect" href="#!"><span class="point-marker bg-info"></span>Canceled</a>
-</div>
-
-<span class="f-left m-r-5 text-inverse">Status : </span>
-</div>
-</div>
-<div class="card-block">
-<div class="row">
-<div class="col-sm-6">
-<ul class="list list-unstyled">
-<li>Invoice #: &nbsp;0028</li>
-<li>Issued on: <span class="text-semibold">2015/01/25</span></li>
-</ul>
-</div>
-<div class="col-sm-6">
-<ul class="list list-unstyled text-right">
-<li>$8,750</li>
-<li>Method: <span class="text-semibold">Paypal</span></li>
-</ul>
-</div>
-</div>
-</div>
-<div class="card-footer">
-<div class="task-list-table">
-<p class="task-due"><strong> Due : </strong><strong class="label label-success">23 hours</strong></p>
-</div>
-<div class="task-board m-0">
-<a href="http://flatable.phoenixcoded.net/html/invoice.html" class="btn btn-info btn-mini b-none"><i class="icofont icofont-eye-alt m-0"></i></a>
-
-<div class="dropdown-secondary dropdown">
-<button class="btn btn-info btn-mini dropdown-toggle waves-light b-none txt-muted" type="button" id="dropdown3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icofont icofont-navigation-menu"></i></button>
-<div class="dropdown-menu" aria-labelledby="dropdown3" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
-<a class="dropdown-item waves-light waves-effect" href="#!"><i class="icofont icofont-ui-alarm"></i> Print Invoice</a>
-<a class="dropdown-item waves-light waves-effect" href="#!"><i class="icofont icofont-attachment"></i> Download invoice</a>
-<div class="dropdown-divider"></div>
-<a class="dropdown-item waves-light waves-effect" href="#!"><i class="icofont icofont-spinner-alt-5"></i> Edit Invoice</a>
-<a class="dropdown-item waves-light waves-effect" href="#!"><i class="icofont icofont-ui-edit"></i> Remove Invoice</a>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-</div>
-<div class="col-lg-12">
-
-<div class="card card-border-primary">
-<div class="card-header">
-<h5>John Doe </h5>
-
-<div class="dropdown-secondary dropdown f-right">
-<button class="btn btn-primary btn-mini dropdown-toggle waves-effect waves-light" type="button" id="dropdown12" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Overdue</button>
-<div class="dropdown-menu" aria-labelledby="dropdown12" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
-<a class="dropdown-item waves-light waves-effect" href="#!"><span class="point-marker bg-danger"></span>Pending</a>
-<a class="dropdown-item waves-light waves-effect" href="#!"><span class="point-marker bg-warning"></span>Paid</a>
-<div class="dropdown-divider"></div>
-<a class="dropdown-item waves-light waves-effect active" href="#!"><span class="point-marker bg-success"></span>On Hold</a>
-<a class="dropdown-item waves-light waves-effect" href="#!"><span class="point-marker bg-info"></span>Canceled</a>
-</div>
-
-<span class="f-left m-r-5 text-inverse">Status : </span>
-</div>
-</div>
-<div class="card-block">
-<div class="row">
-<div class="col-sm-6">
-<ul class="list list-unstyled">
-<li>Invoice #: &nbsp;0028</li>
-<li>Issued on: <span class="text-semibold">2015/01/25</span></li>
-</ul>
-</div>
-<div class="col-sm-6">
-<ul class="list list-unstyled text-right">
-<li>$8,750</li>
-<li>Method: <span class="text-semibold">Paypal</span></li>
-</ul>
-</div>
-</div>
-</div>
-<div class="card-footer">
-<div class="task-list-table">
-<p class="task-due"><strong> Due : </strong><strong class="label label-warning">23 hours</strong></p>
-</div>
-<div class="task-board m-0">
-<a href="http://flatable.phoenixcoded.net/html/invoice.html" class="btn btn-info btn-mini b-none"><i class="icofont icofont-eye-alt m-0"></i></a>
-
-<div class="dropdown-secondary dropdown">
-<button class="btn btn-info btn-mini dropdown-toggle waves-light b-none txt-muted" type="button" id="dropdown8" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icofont icofont-navigation-menu"></i></button>
-<div class="dropdown-menu" aria-labelledby="dropdown8" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
-<a class="dropdown-item waves-light waves-effect" href="#!"><i class="icofont icofont-ui-alarm"></i> Print Invoice</a>
-<a class="dropdown-item waves-light waves-effect" href="#!"><i class="icofont icofont-attachment"></i> Download invoice</a>
-<div class="dropdown-divider"></div>
-<a class="dropdown-item waves-light waves-effect" href="#!"><i class="icofont icofont-spinner-alt-5"></i> Edit Invoice</a>
-<a class="dropdown-item waves-light waves-effect" href="#!"><i class="icofont icofont-ui-edit"></i> Remove Invoice</a>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-</div>
-</div>
-<div class="col-lg-8">
 <div class="card">
 <div class="card-header">
-<button class="btn btn-primary btn-sm">Week</button>
-<button class="btn btn-primary btn-sm">Month</button>
-<button class="btn btn-primary btn-sm">Year</button>
+<h5>Enter Student Details Here</h5>
+
 </div>
 <div class="card-block">
-<div id="morris-extra-area"></div>
-</div>
-</div>
-</div>
-<div class="col-lg-8">
+    <form action="{{ url('student') }}" method="POST" class="form-horizontal" autocomplete="off">
+        @csrf
+    <div class="row">
+        <label class="col-sm-4 col-lg-2 col-form-label">Registration Number</label>
+        <div class="col-sm-8 col-lg-10">
+        <div class="input-group">
+        <span class="input-group-addon"><i class="icofont icofont-ui-edit"></i></span>
+        <input required name="registration_number" type="text" class="form-control form-control-uppercase form-control-bold" placeholder="">
+        </div>
+        </div>
+    </div>
+    <div class="row">
+        <label class="col-sm-4 col-lg-2 col-form-label">First Name</label>
+        <div class="col-sm-8 col-lg-10">
+        <div class="input-group">
+        <span class="input-group-addon"><i class="icofont icofont-ui-user"></i></span>
+        <input required name="first_name" type="text" class="form-control form-control-uppercase form-control-bold" placeholder="">
+        </div>
+        </div>
+    </div>
+    <div class="row">
+        <label class="col-sm-4 col-lg-2 col-form-label">Surname</label>
+        <div class="col-sm-8 col-lg-10">
+        <div class="input-group">
+        <span class="input-group-addon"><i class="icofont icofont-ui-user"></i></span>
+        <input required name="surname" type="text" class="form-control form-control-uppercase form-control-bold" placeholder="">
+        </div>
+        </div>
+    </div>
+    <div class="row">
+        <label class="col-sm-4 col-lg-2 col-form-label">Date of Birth</label>
+        <div class="col-sm-8 col-lg-10">
+        <div class="input-group">
+        <span class="input-group-addon"><i class="icofont icofont-ui-calendar"></i></span>
+        <input required name="birth_date" type="text" class="form-control form-control-uppercase form-control-bold" placeholder="">
+        </div>
+        </div>
+    </div>
+    <div class="row">
+        <label class="col-sm-4 col-lg-2 col-form-label">Sex</label>
+        <div class="col-sm-8 col-lg-10">
+        <div class="input-group">
+        <span class="input-group-addon"><i class="icofont icofont-ui-calendar"></i></span>
+        <select required name="sex" class="js-example-basic-single form-control-bold" >
+            <option></option>
+            <option value="B">Boy</option>
+            <option value="G">Girl</option>
+        </select>
+        </div>
+        </div>
+    </div>
+    <div class="row">
+        <label class="col-sm-4 col-lg-2 col-form-label">Guardian Phone</label>
+        <div class="col-sm-8 col-lg-10">
+        <div class="input-group">
+        <span class="input-group-addon"><i class="icofont icofont-ui-touch-phone"></i></span>
+        <input required name="guardian_phone_number" type="text" class="form-control form-control-uppercase form-control-bold" placeholder="">
+        </div>
+        </div>
+    </div>
+    <div class="row">
+        <label class="col-sm-4 col-lg-2 col-form-label">Address</label>
+        <div class="col-sm-8 col-lg-10">
+        <div class="input-group">
+        <span class="input-group-addon"><i class="icofont icofont-location-pin"></i></span>
+        <input required name="address" type="text" class="form-control form-control-uppercase form-control-bold" placeholder="">
+        </div>
+        </div>
+    </div>
+
 <div class="row">
-<div class="col-lg-12">
-<div class="card table-1-card">
-<div class="card-block">
-<div class="table-responsive">
-<table class="table">
-<thead>
-<tr class="text-capitalize">
-<th>Type</th>
-<th>Lead Name</th>
-<th>Views</th>
-<th>Favourites</th>
-<th>Last Visit</th>
-<th>Last Action</th>
-<th>Last Date</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="#!">Buyer</a>
-</td>
-<td>Denish Ann</td>
-<td>153</td>
-<td>100</td>
-<td>20</td>
-<td>9.23 A.M.</td>
-<td>9/27/2015</td>
-</tr>
-<tr>
-<td><a class="text-danger" href="#!">Lanload</a>
-</td>
-<td>John Doe</td>
-<td>121</td>
-<td>100</td>
-<td>20</td>
-<td>6.23 A.M.</td>
-<td>8/27/2015</td>
-</tr>
-<tr>
-<td><a href="#!">Buyer</a>
-</td>
-<td>Henry Joe</td>
-<td>154</td>
-<td>140</td>
-<td>30</td>
-<td>7.54 P.M.</td>
-<td>4/30/2015</td>
-</tr>
-<tr>
-<td><a class="text-danger" href="#!">Lanload</a>
-</td>
-<td>Sara Soudein</td>
-<td>153</td>
-<td>100</td>
-<td>20</td>
-<td>9.23 A.M.</td>
-<td>5/20/2016</td>
-</tr>
-<tr>
-<td><a href="#!">Buyer</a>
-</td>
-<td>Denish Ann</td>
-<td>153</td>
-<td>100</td>
-<td>20</td>
-<td>9.23 A.M.</td>
-<td>3/26/2015</td>
-</tr>
-<tr>
-<td><a class="text-info" href="#!">Lanload</a>
-</td>
-<td>Stefen Joe</td>
-<td>153</td>
-<td>100</td>
-<td>20</td>
-<td>11.45 A.M.</td>
-<td>5/20/2017</td>
-</tr>
-<tr>
-<td><a href="#!">Buyer</a>
-</td>
-<td>Mark Backlus</td>
-<td>153</td>
-<td>100</td>
-<td>20</td>
-<td>12.40 A.M.</td>
-<td>3/27/2017</td>
-</tr>
-</tbody>
-</table>
+<div class="col-sm-8 col-lg-10">
+<div class="input-group">
+<button type="submit" class="btn btn-primary">SAVE</button>
 </div>
 </div>
 </div>
+</form>
 </div>
-<div class="col-lg-12">
-<div class="card table-card group-widget">
-<div class="">
-<div class="row-table">
-<div class="col-sm-4 bg-primary card-block-big">
-<i class="icofont icofont-music"></i>
-<p>1,586</p>
 </div>
-<div class="col-sm-4 bg-dark-primary card-block-big">
-<i class="icofont icofont-video-clapper"></i>
-<p>1,743</p>
 </div>
-<div class="col-sm-4 bg-darkest-primary card-block-big">
-<i class="icofont icofont-email"></i>
-<p>1,096</p>
+
+</div>
+</div>
+
+
 </div>
 </div>
 </div>
 </div>
 </div>
 </div>
-</div>
-<div class="col-lg-4">
-<div class="card widget-chat-box">
-<div class="card-header">
-<div class="row">
-<div class="col-sm-2">
-<i class="icofont icofont-navigation-menu pop-up"></i>
-</div>
-<div class="col-sm-8 text-center">
-<h5>
-John Henry
-</h5>
-</div>
-<div class="col-sm-2 text-right">
-<i class="icofont icofont-ui-edit"></i>
-</div>
-</div>
-</div>
-<div class="card-block">
-<p class="text-center">12:05 A.M.</p>
-<div class="media">
-<img class="d-flex mr-3 img-circle img-40 img-thumbnail" src="{{  asset('custom/assets/images/user-card/img-round1.jpg') }}" alt="Generic placeholder image">
-<div class="media-body send-chat">
-Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at
-<span class="time">3 min ago</span>
-</div>
-</div>
-<div class="media col-sm-8 offset-md-4">
-<div class="media-body  receive-chat">
-Cras sit amet nibh libero, in gravida nulla.vel metus scelerisque ante
-<span class="time">
-<i class="icofont icofont-check m-r-5"></i>Seen 2 sec ago
-</span>
-</div>
-</div>
-<div class="media">
-<img class="d-flex mr-3 img-circle img-40 img-thumbnail" src="{{  asset('custom/assets/images/user-card/img-round1.jpg') }}" alt="Generic placeholder image">
-<div class="media-body send-chat">
-Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at
-<span class="time">3 min ago</span>
-</div>
-</div>
-<div class="media col-sm-8 offset-md-4">
-<div class="media-body  receive-chat">
-Cras sit amet nibh libero, in gravida nulla.Vel metus scelerisque ante
-<span class="time">
-<i class="icofont icofont-check m-r-5"></i>Seen 2 sec ago
-</span>
-</div>
-</div>
-</div>
-<div class="card-footer">
-<input type="text" class="form-control" placeholder="Your Message">
-</div>
-</div>
-</div>
-<div class="col-md-6 col-xl-3">
-<div class="card social-widget-card">
-<div class="card-block-big bg-facebook">
-<h3>1165 +</h3>
-<span class="m-t-10">Facebook Users</span>
-<i class="icofont icofont-social-facebook"></i>
-</div>
-</div>
-</div>
-<div class="col-md-6 col-xl-3">
-<div class="card social-widget-card">
-<div class="card-block-big bg-twitter">
-<h3>780 +</h3>
-<span class="m-t-10">Twitter Users</span>
-<i class="icofont icofont-social-twitter"></i>
-</div>
-</div>
-</div>
-<div class="col-md-6 col-xl-3">
-<div class="card social-widget-card">
-<div class="card-block-big bg-linkein">
-<h3>998 +</h3>
-<span class="m-t-10">Linked In Users</span>
-<i class="icofont icofont-brand-linkedin"></i>
-</div>
-</div>
-</div>
-<div class="col-md-6 col-xl-3">
-<div class="card social-widget-card">
-<div class="card-block-big bg-google-plus">
-<h3>650 +</h3>
-<span class="m-t-10">Google Plus Users</span>
-<i class="icofont icofont-social-google-plus"></i>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+
 
 <!--[if lt IE 9]>
 <div class="ie-warning">
@@ -3296,7 +2637,7 @@ Cras sit amet nibh libero, in gravida nulla.Vel metus scelerisque ante
 
 
 <script type="text/javascript" src="{{  asset('custom/bower_components/jquery/dist/jquery.min.js') }}"></script>
-<script src="{{  asset('custom/bower_components/jquery-ui/jquery-ui.min.js') }}"></script>
+<script type="text/javascript" src="{{  asset('custom/bower_components/jquery-ui/jquery-ui.min.js') }}"></script>
 <script type="text/javascript" src="{{  asset('custom/bower_components/tether/dist/js/tether.min.js') }}"></script>
 <script type="text/javascript" src="{{  asset('custom/bower_components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
 
@@ -3307,33 +2648,19 @@ Cras sit amet nibh libero, in gravida nulla.Vel metus scelerisque ante
 
 <script type="text/javascript" src="{{  asset('custom/bower_components/classie/classie.js') }}"></script>
 
-<script src="{{  asset('custom/bower_components/d3/d3.js') }}"></script>
-<script src="{{  asset('custom/bower_components/rickshaw/rickshaw.js') }}"></script>
-
-<script src="{{  asset('custom/bower_components/raphael/raphael.min.js') }}"></script>
-<script src="{{  asset('custom/bower_components/morris.js/morris.js') }}"></script>
-
-<script type="text/javascript" src="{{  asset('custom/assets/pages/dashboard/horizontal-timeline/js/main.js') }}"></script>
-
-<script type="text/javascript" src="{{  asset('custom/assets/pages/dashboard/amchart/js/amcharts.js') }}"></script>
-<script type="text/javascript" src="{{  asset('custom/assets/pages/dashboard/amchart/js/serial.js') }}"></script>
-<script type="text/javascript" src="{{  asset('custom/assets/pages/dashboard/amchart/js/light.js') }}"></script>
-<script type="text/javascript" src="{{  asset('custom/assets/pages/dashboard/amchart/js/custom-amchart.js') }}"></script>
-
 <script type="text/javascript" src="{{  asset('custom/bower_components/i18next/i18next.min.js') }}"></script>
 <script type="text/javascript" src="{{  asset('custom/bower_components/i18next-xhr-backend/i18nextXHRBackend.min.js') }}"></script>
 <script type="text/javascript" src="{{  asset('custom/bower_components/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.min.js') }}"></script>
 <script type="text/javascript" src="{{  asset('custom/bower_components/jquery-i18next/jquery-i18next.min.js') }}"></script>
 
-<script type="text/javascript" src="{{  asset('custom/assets/pages/dashboard/custom-dashboard.js') }}"></script>
 <script type="text/javascript" src="{{  asset('custom/assets/js/script.js') }}"></script>
-
 <script src="{{  asset('custom/assets/js/pcoded.min.js') }}"></script>
 <script src="{{  asset('custom/assets/js/demo-12.js') }}"></script>
 <script src="{{  asset('custom/assets/js/jquery.mCustomScrollbar.concat.min.js') }}"></script>
 <script src="{{  asset('custom/assets/js/jquery.mousewheel.min.js') }}"></script>
-
+<script type="text/javascript" src="{{  asset('custom/bower_components/select2/dist/js/select2.full.min.js') }}"></script>
+<script type="text/javascript" src="{{  asset('custom/assets/pages/advance-elements/select2-custom.js') }}"></script>
 </body>
 
-<!-- Mirrored from flatable.phoenixcoded.net/default/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 Jan 2019 11:30:25 GMT -->
+<!-- Mirrored from flatable.phoenixcoded.net/default/form-elements-add-on.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 Jan 2019 11:52:45 GMT -->
 </html>
