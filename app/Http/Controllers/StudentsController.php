@@ -25,7 +25,7 @@ class StudentsController extends Controller
      */
     public function create()
     {
-        return view('student.add')->with('studentTitle', 'Add Students');
+        return view('student.create')->with('studentTitle', 'Add Students');
     }
 
     /**
