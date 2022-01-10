@@ -595,34 +595,8 @@ Mega
 </a>
 <ul class="pcoded-submenu">
 <li class="">
-<a href="index-2.html">
-<span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-<span class="pcoded-mtext" data-i18n="nav.dash.default">Default</span>
-<span class="pcoded-mcaret"></span>
-</a>
-</li>
-<li class=" ">
-<a href="dashboard-ecommerce.html">
-<span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-<span class="pcoded-mtext" data-i18n="nav.dash.ecommerce">Ecommerce</span>
-<span class="pcoded-mcaret"></span>
-</a>
-</li>
-<li class=" ">
-<a href="dashboard-crm.html">
-<span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-<span class="pcoded-mtext" data-i18n="nav.dash.crm">CRM</span>
-<span class="pcoded-mcaret"></span>
-</a>
-</li>
-<li class=" ">
-<a href="dashboard-analytics.html">
-<span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-<span class="pcoded-mtext" data-i18n="nav.dash.analytics">Analytics</span>
-<span class="pcoded-badge label label-info ">NEW</span>
-<span class="pcoded-mcaret"></span>
-</a>
-</li>
+
+
 <li class=" ">
 <a href="dashboard-project.html">
 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
