@@ -2531,19 +2531,6 @@ Mega
 <div class="row">
 <div class="col-lg-12">
 
-<div class="tab-header">
-<ul class="nav nav-tabs md-tabs tab-timeline" role="tablist" id="mytab">
-<li class="nav-item">
-<a class="nav-link active" data-toggle="tab" href="#personal" role="tab">Personal Info</a>
-<div class="slide"></div>
-</li>
-<li class="nav-item">
-<a class="nav-link" data-toggle="tab" href="#binfo" role="tab">Guardian Info</a>
-<div class="slide"></div>
-</li>
-
-</ul>
-</div>
 
 
 <div class="tab-content">
@@ -2572,8 +2559,16 @@ Mega
 <td>{{ strtoupper($student->sex) }}</td>
 </tr>
 <tr>
-<th scope="row">Birth Date</th>
-<td>{{ strtoupper($student->birth_date) }}</td>
+    <th scope="row">Birth Date</th>
+    <td>{{ strtoupper($student->birth_date) }}</td>
+</tr>
+<tr>
+    <th scope="row">Guardian Phone</th>
+    <td>{{ strtoupper($student->guardian_phone_number) }}</td>
+</tr>
+<tr>
+    <th scope="row">Address</th>
+    <td>{{ strtoupper($student->address) }}</td>
 </tr>
 </tbody>
 </table>
@@ -2586,48 +2581,6 @@ Mega
 </div>
 </div>
 </div>
-<div class="tab-pane active" id="binfo" role="tabpanel">
-
-    <div class="card">
-    <div class="card-header">
-    <h5 class="card-header-text">About Me</h5>
-    </div>
-    <div class="card-block">
-    <div class="view-info">
-    <div class="row">
-    <div class="col-lg-12">
-    <div class="general-info">
-    <div class="row">
-    <div class="col-lg-12 col-xl-6">
-    <table class="table m-0">
-    <tbody>
-    <tr>
-    <th scope="row">Guardian Name</th>
-    <td></td>
-    </tr>
-    <tr>
-    <th scope="row">Gender</th>
-    <td></td>
-    </tr>
-    <tr>
-    <th scope="row">Phone Number</th>
-    <td>{{ strtoupper($student->guardian_phone_number) }}</td>
-    </tr>
-    <tr>
-    <th scope="row">Address</th>
-    <td>{{ strtoupper($student->address) }}</td>
-    </tr>
-    </tbody>
-    </table>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
 </div>
 
 </div>
