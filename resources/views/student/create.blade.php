@@ -2541,9 +2541,9 @@ Mega
         <label class="col-sm-4 col-lg-2 col-form-label">Sex</label>
         <div class="col-sm-8 col-lg-10">
         <div class="input-group">
-        <span class="input-group-addon"><i class="icofont icofont-ui-calendar"></i></span>
-        <select required name="sex" class="js-example-basic-single form-control-bold" >
-            <option></option>
+        <span class="input-group-addon"><i class="icofont icofont-ui-user"></i></span>
+        <select required name="sex" class=" form-control" >
+            <option value="">Select sex</option>
             <option value="B">Boy</option>
             <option value="G">Girl</option>
         </select>
