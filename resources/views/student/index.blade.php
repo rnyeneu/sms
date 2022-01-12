@@ -571,7 +571,7 @@
     <th>Surname</th>
     <th>DOB</th>
     <th>Sex</th>
-    <th ></th>
+    {{-- <th ></th> --}}
     <th>Actions</th>
     <th></th>
     </tr>
@@ -581,13 +581,13 @@
                
   <tr>
     <td></td>
-    <td>{{ strtoupper($row->first_name) }}</td>
-    <td>{{ strtoupper($row->surname) }}</td>
-    <td>{{ $row->birth_date }}</td>
-    <td>{{ $row->sex }}</td>
-    <td>
+    <td><a href="{{ url('student/'.$row->id) }}">{{ strtoupper($row->first_name) }}</a></td>
+    <td><a href="{{ url('student/'.$row->id) }}">{{ strtoupper($row->surname) }}</a></td>
+    <td><a href="{{ url('student/'.$row->id) }}">{{ $row->birth_date }}</a></td>
+    <td><a href="{{ url('student/'.$row->id) }}">{{ $row->sex }}</a></td>
+    {{-- <td>
       <a href="{{ url('student/'.$row->id) }}" class="btn btn-primary btn-round"><i class="icofont icofont-listing-number"></i></a>
-    </td>
+    </td> --}}
     <td style="text-align: center;">
       <a href="{{ url('student/'.$row->id.'/edit') }}" class="btn btn-warning btn-round"><i class="icofont icofont-edit"></i></a>
     </td>
