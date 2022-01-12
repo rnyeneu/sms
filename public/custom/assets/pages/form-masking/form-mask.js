@@ -3,13 +3,13 @@ $(function() {
     
     /*date*/
     $(".date").inputmask({ mask: "99/99/9999"});
-    $(".date2").inputmask({ mask: "99-99-9999"});
+    $(".date2").inputmask({ mask: "9999-99-99"});
     /*time*/
     $(".hour").inputmask({ mask: "99:99:99"});
     $(".dateHour").inputmask({ mask: "99/99/9999 99:99:99"});
 
     /*phone no*/
-    $(".mob_no").inputmask({ mask: "9999-999-999"});
+    $(".mob_no").inputmask({ mask: "9999999999"});
     $(".phone").inputmask({ mask: "9999-9999"});
     $(".telphone_with_code").inputmask({ mask: "(99) 9999-9999"});
     $(".us_telephone").inputmask({ mask: "(999) 999-9999"});

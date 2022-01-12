@@ -18,7 +18,7 @@ class CreateStudentsTable extends Migration
             $table->string("registration_number")->nullable(false);
             $table->string("first_name", 30)->nullable(false);
             $table->string("surname", 30)->nullable(false);
-            $table->string("birth_date")->nullable(false);
+            $table->date("birth_date")->nullable(false);
             $table->string("sex", 1)->nullable(false);
             $table->string("guardian_phone_number")->nullable();
             $table->string("address", 30)->nullable(false);
