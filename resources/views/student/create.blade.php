@@ -327,86 +327,169 @@
 <h5>Enter Student Details Here</h5>
 
 </div>
-<div class="card-block">
-    <form action="{{ url('student') }}" method="POST" class="form-horizontal" autocomplete="off">
-        @csrf
-    <div class="row ">
-        <label class="col-sm-4 col-lg-2 col-form-label">Registration Number</label>
-        <div class="col-sm-8 col-lg-10">
-        <div class="input-group">
-        <span class="input-group-addon"><i class="icofont icofont-ui-edit"></i></span>
-        <input required name="registration_number" type="text" class="form-control form-control-uppercase form-control-bold" placeholder="">
-        </div>
-        </div>
-    </div>
+
+
+<div class="page-body">
     <div class="row">
-        <label class="col-sm-4 col-lg-2 col-form-label">First Name</label>
-        <div class="col-sm-8 col-lg-10">
-        <div class="input-group">
-        <span class="input-group-addon"><i class="icofont icofont-ui-user"></i></span>
-        <input required name="first_name" type="text" class="form-control form-control-uppercase form-control-bold" placeholder="">
-        </div>
-        </div>
-    </div>
-    <div class="row">
-        <label class="col-sm-4 col-lg-2 col-form-label">Surname</label>
-        <div class="col-sm-8 col-lg-10">
-        <div class="input-group">
-        <span class="input-group-addon"><i class="icofont icofont-ui-user"></i></span>
-        <input required name="surname" type="text" class="form-control form-control-uppercase form-control-bold" placeholder="">
-        </div>
-        </div>
-    </div>
-    <div class="row">
-        <label class="col-sm-4 col-lg-2 col-form-label">Date of Birth</label>
-        <div class="col-sm-8 col-lg-10">
-        <div class="input-group">
-        <span class="input-group-addon"><i class="icofont icofont-ui-calendar"></i></span>
-        <input required name="birth_date" type="text" class="form-control date2 form-control-bold" data-mask="9999-99-99" placeholder="YYYY-MM-DD">
-        </div>
-        </div>
-    </div>
-    <div class="row">
-        <label class="col-sm-4 col-lg-2 col-form-label">Sex</label>
-        <div class="col-sm-8 col-lg-10">
-        <div class="input-group">
-        <span class="input-group-addon"><i class="icofont icofont-ui-user"></i></span>
-        <select required name="sex" class=" form-control" >
-            <option value="">Select sex</option>
-            <option value="B">Boy</option>
-            <option value="G">Girl</option>
-        </select>
-        </div>
-        </div>
-    </div>
-    <div class="row">
-        <label class="col-sm-4 col-lg-2 col-form-label">Guardian Phone</label>
-        <div class="col-sm-8 col-lg-10">
-        <div class="input-group">
-        <span class="input-group-addon"><i class="icofont icofont-ui-touch-phone"></i></span>
-        <input required name="guardian_phone_number" type="text" class="mob_no form-control form-control-uppercase form-control-bold" data-mask="9999-999-999" placeholder="">
-        </div>
-        </div>
-    </div>
-    <div class="row">
-        <label class="col-sm-4 col-lg-2 col-form-label">Address</label>
-        <div class="col-sm-8 col-lg-10">
-        <div class="input-group">
-        <span class="input-group-addon"><i class="icofont icofont-location-pin"></i></span>
-        <input required name="address" type="text" class="form-control form-control-uppercase form-control-bold" placeholder="">
-        </div>
-        </div>
+    <div class="col-lg-12 col-xl-6">
+    
+    <div class="card">
+    <div class="card-header">
+    <h6>Student's Info</h6>
+        
     </div>
 
-<div class="row">
-<div class="col-sm-8 col-lg-10">
-<div class="input-group">
-<button type="submit" class="btn btn-primary">SAVE</button>
-</div>
-</div>
-</div>
-</form>
-</div>
+
+    <div class="card-block">
+        <form action="{{ url('student') }}" method="POST" class="form-horizontal" autocomplete="off">
+            @csrf
+        <div class="row ">
+            <label class="col-sm-4 col-lg-2 col-form-label">Registration Number</label>
+            <div class="col-sm-8 col-lg-10">
+            <div class="input-group">
+            <span class="input-group-addon"><i class="icofont icofont-ui-edit"></i></span>
+            <input required name="registration_number" type="text" class="form-control form-control-uppercase form-control-bold" placeholder="">
+            </div>
+            </div>
+        </div>
+        <div class="row">
+            <label class="col-sm-4 col-lg-2 col-form-label">First Name</label>
+            <div class="col-sm-8 col-lg-10">
+            <div class="input-group">
+            <span class="input-group-addon"><i class="icofont icofont-ui-user"></i></span>
+            <input required name="first_name" type="text" class="form-control form-control-uppercase form-control-bold" placeholder="">
+            </div>
+            </div>
+        </div>
+        <div class="row">
+            <label class="col-sm-4 col-lg-2 col-form-label">Surname</label>
+            <div class="col-sm-8 col-lg-10">
+            <div class="input-group">
+            <span class="input-group-addon"><i class="icofont icofont-ui-user"></i></span>
+            <input required name="surname" type="text" class="form-control form-control-uppercase form-control-bold" placeholder="">
+            </div>
+            </div>
+        </div>
+        <div class="row">
+            <label class="col-sm-4 col-lg-2 col-form-label">Date of Birth</label>
+            <div class="col-sm-8 col-lg-10">
+            <div class="input-group">
+            <span class="input-group-addon"><i class="icofont icofont-ui-calendar"></i></span>
+            <input required name="birth_date" type="text" class="form-control date2 form-control-bold" data-mask="9999-99-99" placeholder="YYYY-MM-DD">
+            </div>
+            </div>
+        </div>
+        <div class="row">
+            <label class="col-sm-4 col-lg-2 col-form-label">Sex</label>
+            <div class="col-sm-8 col-lg-10">
+            <div class="input-group">
+            <span class="input-group-addon"><i class="icofont icofont-ui-user"></i></span>
+            <select required name="sex" class=" form-control" >
+                <option value="">Select sex</option>
+                <option value="B">Boy</option>
+                <option value="G">Girl</option>
+            </select>
+            </div>
+            </div>
+        </div>
+        <div class="row">
+            <label class="col-sm-4 col-lg-2 col-form-label">Disability</label>
+            <div class="col-sm-8 col-lg-10">
+            <div class="input-group">
+            <span class="input-group-addon"><i class="icofont icofont-paralysis-disability"></i></span>
+            <select required name="disability" class=" form-control" >
+                <option value="">Select Disability</option>
+                <option value="None">None</option>
+                <option value="HI">Hearing Impairement</option>
+                <option value="II">Intellectual Impairement</option>
+                <option value="LVI">Low Vision Impairement</option>
+                <option value="HVI">High Vision Impairement</option>
+            </select>
+            </div>
+            </div>
+        </div>
+       
+    </div>
+
+
+    </div>
+    
+    </div>
+    <div class="col-lg-12 col-xl-6">
+    
+    <div class="card">
+    <div class="card-header">
+    <h6>Guardian's Info</h6>
+    </div>
+    <div class="card-block">
+      
+        <div class="row">
+            <label class="col-sm-4 col-lg-2 col-form-label">First Name</label>
+            <div class="col-sm-8 col-lg-10">
+            <div class="input-group">
+            <span class="input-group-addon"><i class="icofont icofont-ui-user"></i></span>
+            <input required name="guardian_first_name" type="text" class="form-control form-control-uppercase form-control-bold" placeholder="">
+            </div>
+            </div>
+        </div>
+        <div class="row">
+            <label class="col-sm-4 col-lg-2 col-form-label">Surname</label>
+            <div class="col-sm-8 col-lg-10">
+            <div class="input-group">
+            <span class="input-group-addon"><i class="icofont icofont-ui-user"></i></span>
+            <input required name="guardian_surname" type="text" class="form-control form-control-uppercase form-control-bold" placeholder="">
+            </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <label class="col-sm-4 col-lg-2 col-form-label">Sex</label>
+            <div class="col-sm-8 col-lg-10">
+            <div class="input-group">
+            <span class="input-group-addon"><i class="icofont icofont-ui-user"></i></span>
+            <select required name="guardian_sex" class=" form-control" >
+                <option value="">Select sex</option>
+                <option value="M">Male</option>
+                <option value="F">Female</option>
+            </select>
+            </div>
+            </div>
+        </div>
+        <div class="row">
+            <label class="col-sm-4 col-lg-2 col-form-label">Guardian Phone</label>
+            <div class="col-sm-8 col-lg-10">
+            <div class="input-group">
+            <span class="input-group-addon"><i class="icofont icofont-ui-touch-phone"></i></span>
+            <input required name="guardian_phone_number" type="text" class="mob_no form-control form-control-uppercase form-control-bold" data-mask="9999-999-999" placeholder="">
+            </div>
+            </div>
+        </div>
+        <div class="row">
+            <label class="col-sm-4 col-lg-2 col-form-label">Address</label>
+            <div class="col-sm-8 col-lg-10">
+            <div class="input-group">
+            <span class="input-group-addon"><i class="icofont icofont-location-pin"></i></span>
+            <input required name="address" type="text" class="form-control form-control-uppercase form-control-bold" placeholder="">
+            </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8 col-lg-10">
+            <div class="input-group">
+            <input type="submit" class="btn btn-primary" value="SAVE">
+            </div>
+            </div>
+            </div>
+    </form>
+
+
+
+    </div>
+    </div>
+    
+    </div>
+    </div>
+    </div>
 </div>
 </div>
 
