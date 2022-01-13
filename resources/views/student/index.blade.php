@@ -354,6 +354,7 @@
     <th>Surname</th>
     <th>DOB</th>
     <th>Sex</th>
+    <th>Disability</th>
     {{-- <th ></th> --}}
     <th>Actions</th>
     <th></th>
@@ -368,6 +369,7 @@
     <td><a href="{{ url('student/'.$row->id) }}">{{ strtoupper($row->surname) }}</a></td>
     <td><a href="{{ url('student/'.$row->id) }}">{{ $row->birth_date }}</a></td>
     <td><a href="{{ url('student/'.$row->id) }}">{{ $row->sex }}</a></td>
+    <td><a href="{{ url('student/'.$row->id) }}">{{ $row->disability}}</a></td>
     {{-- <td>
       <a href="{{ url('student/'.$row->id) }}" class="btn btn-primary btn-round"><i class="icofont icofont-listing-number"></i></a>
     </td> --}}

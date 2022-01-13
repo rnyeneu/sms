@@ -399,8 +399,8 @@
     <td>{{ strtoupper($student->birth_date) }}</td>
 </tr>
 <tr>
-    <th scope="row">Guardian Phone</th>
-    <td>{{ strtoupper($student->guardian_phone_number) }}</td>
+    <th scope="row">Disability</th>
+    <td>{{ strtoupper($student->disability) }}</td>
 </tr>
 <tr>
     <th scope="row">Address</th>
@@ -409,6 +409,32 @@
 </tbody>
 </table>
 </div>
+
+<div class="col-lg-12 col-xl-6">
+    <table class="table">
+    <tbody>
+    <tr>
+    <th scope="row">Guardian Name</th>
+    <td>{{ strtoupper($student->guardian_first_name.' '.$student->guardian_surname) }}</td>
+    </tr>
+    <tr>
+        <th scope="row">Sex</th>
+        <td>{{ strtoupper($student->guardian_sex) }}</td>
+        </tr>
+    <tr>
+        <th scope="row">Guardian Phone</th>
+        <td>{{ strtoupper($student->guardian_phone_number) }}</td>
+    </tr>
+
+    <tr>
+        <th scope="row">Address</th>
+        <td>{{ strtoupper($student->address) }}</td>
+    </tr>
+
+    </tbody>
+    </table>
+    </div>
+
 </div>
 </div>
 </div>

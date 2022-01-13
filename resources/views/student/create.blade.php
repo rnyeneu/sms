@@ -344,7 +344,7 @@
         <form action="{{ url('student') }}" method="POST" class="form-horizontal" autocomplete="off">
             @csrf
         <div class="row ">
-            <label class="col-sm-4 col-lg-2 col-form-label">Registration Number</label>
+            <label class="col-sm-4 col-lg-2 col-form-label">Reg. Number</label>
             <div class="col-sm-8 col-lg-10">
             <div class="input-group">
             <span class="input-group-addon"><i class="icofont icofont-ui-edit"></i></span>
@@ -371,7 +371,7 @@
             </div>
         </div>
         <div class="row">
-            <label class="col-sm-4 col-lg-2 col-form-label">Date of Birth</label>
+            <label class="col-sm-4 col-lg-2 col-form-label">DOB</label>
             <div class="col-sm-8 col-lg-10">
             <div class="input-group">
             <span class="input-group-addon"><i class="icofont icofont-ui-calendar"></i></span>
