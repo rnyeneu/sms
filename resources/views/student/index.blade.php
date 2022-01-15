@@ -166,10 +166,11 @@
     </tr>
 </thead>
 <tbody>
-  @foreach ($student as $row)
+  
+  @foreach ($student as $index => $row)
                
   <tr>
-    <td></td>
+    <td>{{ $index+1 }}</td>
     <td><a href="{{ url('student/'.$row->id) }}">{{ strtoupper($row->first_name) }}</a></td>
     <td><a href="{{ url('student/'.$row->id) }}">{{ strtoupper($row->surname) }}</a></td>
     <td><a href="{{ url('student/'.$row->id) }}">{{ $row->birth_date }}</a></td>
@@ -179,7 +180,7 @@
       <a href="{{ url('student/'.$row->id) }}" class="btn btn-primary btn-round"><i class="icofont icofont-listing-number"></i></a>
     </td> --}}
     <td style="text-align: center;">
-      <a href="{{ url('student/'.$row->id.'/edit') }}" class="btn btn-warning btn-round"><i class="icofont icofont-edit"></i></a>
+      <a href="{{ url('student/'.$row->id.'/edit') }}" class="btn btn-primary btn-round"><i class="icofont icofont-edit"></i></a>
     </td>
       <td>
       <form action="{{ url('student/'.$row->id) }}" method="POST">
