@@ -95,30 +95,30 @@
                                 <h6 class="mega-menu-title">Gallery</h6>
                                 <div class="row m-b-20">
                                     <div class="col-sm-4"><img class="img-fluid img-thumbnail"
-                                            src="{{ asset('custom/assets/images/mega-menu/01.jpg') }}"
-                                            alt="Gallery-1">
+                                                               src="{{ asset('custom/assets/images/mega-menu/01.jpg') }}"
+                                                               alt="Gallery-1">
                                     </div>
                                     <div class="col-sm-4"><img class="img-fluid img-thumbnail"
-                                            src="{{ asset('custom/assets/images/mega-menu/02.jpg') }}"
-                                            alt="Gallery-2">
+                                                               src="{{ asset('custom/assets/images/mega-menu/02.jpg') }}"
+                                                               alt="Gallery-2">
                                     </div>
                                     <div class="col-sm-4"><img class="img-fluid img-thumbnail"
-                                            src="{{ asset('custom/assets/images/mega-menu/03.jpg') }}"
-                                            alt="Gallery-3">
+                                                               src="{{ asset('custom/assets/images/mega-menu/03.jpg') }}"
+                                                               alt="Gallery-3">
                                     </div>
                                 </div>
                                 <div class="row m-b-20">
                                     <div class="col-sm-4"><img class="img-fluid img-thumbnail"
-                                            src="{{ asset('custom/assets/images/mega-menu/04.jpg') }}"
-                                            alt="Gallery-4">
+                                                               src="{{ asset('custom/assets/images/mega-menu/04.jpg') }}"
+                                                               alt="Gallery-4">
                                     </div>
                                     <div class="col-sm-4"><img class="img-fluid img-thumbnail"
-                                            src="{{ asset('custom/assets/images/mega-menu/05.jpg') }}"
-                                            alt="Gallery-5">
+                                                               src="{{ asset('custom/assets/images/mega-menu/05.jpg') }}"
+                                                               alt="Gallery-5">
                                     </div>
                                     <div class="col-sm-4"><img class="img-fluid img-thumbnail"
-                                            src="{{ asset('custom/assets/images/mega-menu/06.jpg') }}"
-                                            alt="Gallery-6">
+                                                               src="{{ asset('custom/assets/images/mega-menu/06.jpg') }}"
+                                                               alt="Gallery-6">
                                     </div>
                                 </div>
                                 <button class="btn btn-primary btn-sm btn-block">Browse Gallery</button>
@@ -130,21 +130,21 @@
                                         <label for="example-text-input" class="col-3 col-form-label">Name</label>
                                         <div class="col-9">
                                             <input class="form-control" type="text" placeholder="Artisanal kale"
-                                                id="example-text-input">
+                                                   id="example-text-input">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label for="example-search-input" class="col-3 col-form-label">Email</label>
                                         <div class="col-9">
                                             <input class="form-control" type="email"
-                                                placeholder="Enter your E-mail Id" id="example-search-input">
+                                                   placeholder="Enter your E-mail Id" id="example-search-input">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label for="example-search-input" class="col-3 col-form-label">Contact</label>
                                         <div class="col-9">
                                             <input class="form-control" type="number" placeholder="+91-9898989898"
-                                                id="example-search-input">
+                                                   id="example-search-input">
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -164,8 +164,8 @@
                         <a href="#!">
                             <img src="{{ asset('custom/assets/images/user.png') }}" alt="User-Profile-Image">
                             <span>@if (session('loggedUser'))
-                                                         
-                            @endif</span>
+                                      {{session('loggedUser')->email}}
+                                @endif</span>
                             <i class="ti-angle-down"></i>
                         </a>
                         <ul class="show-notification profile-notification">
@@ -195,14 +195,14 @@
                             <h2>People</h2>
                             <a class="dummy-media-object" href="#!">
                                 <img class="round"
-                                    src="http://0.gravatar.com/avatar/81b58502541f9445253f30497e53c280?s=50&amp;d=identicon&amp;r=G"
-                                    alt="Sara Soueidan" />
+                                     src="http://0.gravatar.com/avatar/81b58502541f9445253f30497e53c280?s=50&amp;d=identicon&amp;r=G"
+                                     alt="Sara Soueidan"/>
                                 <h3>Sara Soueidan</h3>
                             </a>
                             <a class="dummy-media-object" href="#!">
                                 <img class="round"
-                                    src="http://1.gravatar.com/avatar/9bc7250110c667cd35c0826059b81b75?s=50&amp;d=identicon&amp;r=G"
-                                    alt="Shaun Dona" />
+                                     src="http://1.gravatar.com/avatar/9bc7250110c667cd35c0826059b81b75?s=50&amp;d=identicon&amp;r=G"
+                                     alt="Shaun Dona"/>
                                 <h3>Shaun Dona</h3>
                             </a>
                         </div>
@@ -210,12 +210,12 @@
                             <h2>Popular</h2>
                             <a class="dummy-media-object" href="#!">
                                 <img src="{{ asset('custom/assets/images/avatar-1.png') }}"
-                                    alt="PagePreloadingEffect" />
+                                     alt="PagePreloadingEffect"/>
                                 <h3>Page Preloading Effect</h3>
                             </a>
                             <a class="dummy-media-object" href="#!">
                                 <img src="{{ asset('custom/assets/images/avatar-1.png') }}"
-                                    alt="DraggableDualViewSlideshow" />
+                                     alt="DraggableDualViewSlideshow"/>
                                 <h3>Draggable Dual-View Slideshow</h3>
                             </a>
                         </div>
@@ -223,12 +223,12 @@
                             <h2>Recent</h2>
                             <a class="dummy-media-object" href="#!">
                                 <img src="{{ asset('custom/assets/images/avatar-1.png') }}"
-                                    alt="TooltipStylesInspiration" />
+                                     alt="TooltipStylesInspiration"/>
                                 <h3>Tooltip Styles Inspiration</h3>
                             </a>
                             <a class="dummy-media-object" href="#!">
                                 <img src="{{ asset('custom/assets/images/avatar-1.png') }}"
-                                    alt="NotificationStyles" />
+                                     alt="NotificationStyles"/>
                                 <h3>Notification Styles Inspiration</h3>
                             </a>
                         </div>
