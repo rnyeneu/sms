@@ -41,21 +41,21 @@
                             @csrf
                             <div class="form-left-to-w3l">
                                 <span class="text-danger">@error('full_name'){{ $message }}@enderror</span>
-                                <input type="text" name="full_name" placeholder="Full Name" >
+                                <input type="text" name="full_name" placeholder="Full Name" value="{{ old('full_name') }}" >
                              </div>
                            <div class="form-left-to-w3l">
                             <span class="text-danger">@error('username'){{ $message }}@enderror</span>
-                              <input type="text" name="username" placeholder="Username" >
+                              <input type="text" name="username" placeholder="Username" value="{{ old('username') }}" >
                               
                            </div>
                            <div class="form-left-to-w3l">
                             <span class="text-danger">@error('phone'){{ $message }}@enderror</span>
-                              <input type="text" name="phone" placeholder="Phone" >
+                              <input type="text" name="phone" placeholder="Phone" value="{{ old('phone') }}">
                               
                            </div>
                            <div class="form-left-to-w3l">
                             <span class="text-danger">@error('email'){{ $message }}@enderror</span>
-                              <input type="email" name="email" placeholder="Email" >
+                              <input type="email" name="email" placeholder="Email" value="{{ old('email') }}" >
                               
                            </div>
                            <div class="form-left-to-w3l">
