@@ -147,7 +147,7 @@
             <li class="user-profile header-notification">
             <a href="#!">
             <img src="{{  asset('custom/assets/images/user.png') }}" alt="User-Profile-Image">
-            <span>John Doe</span>
+            {{-- <span>{{ $LoggedUserInfo['full_name'] }}</span> --}}
             <i class="ti-angle-down"></i>
             </a>
             <ul class="show-notification profile-notification">
