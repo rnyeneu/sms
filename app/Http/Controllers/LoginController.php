@@ -68,16 +68,16 @@ class LoginController extends Controller
         }else{
             //check password
             if(Hash::check($request->password, $user_info->password)){
-              $request->session()->put('loggedUser',$user_info->id);
-              return redirect ('/');
+              $request->session()->put('loggedUser',$user_info);
+              
+              return redirect ('/dashboard');
             }else{
                 return back()->with('fail', 'Please provide correct username or password');
             }
         }
     }
 
-    function default(){
-        $data = ['LoggedUserInfo' =>Admin::where('id', '=', session('loggedUser'))->firtst()];
-        return view ('/', $data);
+    function dashboard(){
+        return view ('/dashboard');
     }
 }

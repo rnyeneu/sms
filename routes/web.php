@@ -16,7 +16,7 @@ use App\Http\Controllers\LoginController;
 */
 
 Route::get('/', function () {
-    return view('default');
+    return view('/auth/login');
 });
 Route::resource('student', StudentsController::class);
 Route::get('/auth/login', [LoginController::class, 'login'])->name('auth.login');
@@ -24,4 +24,4 @@ Route::get('/auth/register', [LoginController::class, 'register'])->name('auth.r
 Route::post('/auth/save', [LoginController::class, 'save'])->name('auth.save');
 Route::post('/auth/check', [LoginController::class, 'check'])->name('auth.check');
 
-Route::post('/', [LoginController::class, 'default']);
+Route::get('/dashboard', [LoginController::class, 'dashboard']);
