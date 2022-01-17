@@ -164,7 +164,7 @@
                         <a href="#!">
                             <img src="{{ asset('custom/assets/images/user.png') }}" alt="User-Profile-Image">
                             <span>@if (session('loggedUser'))
-                                      {{session('loggedUser')->email}}
+                                      {{session('loggedUser')->full_name}}
                                 @endif</span>
                             <i class="ti-angle-down"></i>
                         </a>
@@ -180,8 +180,8 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#!">
-                                    <i class="ti-layout-sidebar-left"></i> Logout
+                                <a href="{{ route('auth.login') }}">
+                                    <i class="icofont icofont-logout"></i> Logout
                                 </a>
                             </li>
                         </ul>
