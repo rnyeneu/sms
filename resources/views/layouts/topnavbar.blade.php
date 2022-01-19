@@ -163,8 +163,8 @@
                     <li class="user-profile header-notification">
                         <a href="#!">
                             <img src="{{ asset('custom/assets/images/user.png') }}" alt="User-Profile-Image">
-                            <span>@if (session('loggedUser'))
-                                      {{session('loggedUser')->full_name}}
+                            <span>@if (Auth::user())
+                                    {{Auth::user()->full_name}}
                                 @endif</span>
                             <i class="ti-angle-down"></i>
                         </a>
@@ -180,7 +180,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ route('auth.login') }}">
+                                <a href="{{ route('toka') }}">
                                     <i class="icofont icofont-logout"></i> Logout
                                 </a>
                             </li>
