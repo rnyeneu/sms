@@ -4,30 +4,41 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Admin;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 
 class LoginController extends Controller
 {
-    function login(){
+    function login()
+    {
 
         return view('auth.login');
     }
 
-    function register(){
+    function register()
+    {
 
-        return view ('auth.register');
+        return view('auth.register');
     }
 
-    function save (Request $request){
+    function logout(Request $request)
+    {
+        Auth::logout();
+        $request->session()->invalidate();
+        return redirect('auth/login');
+    }
+
+    function save(Request $request)
+    {
 
         //Validate the request
         $request->validate([
 
-            'full_name'=>'required',
-            'username'=>'required',
-            'phone'=>'required',
-            'email'=>'required|unique:admins',
-            'password'=>'required|min:5|max:15'
+            'full_name' => 'required',
+            'username' => 'required',
+            'phone' => 'required',
+            'email' => 'required|unique:admins',
+            'password' => 'required|min:5|max:15'
 
 
         ]);
@@ -41,43 +52,44 @@ class LoginController extends Controller
         $admin->password = Hash::make($request->password);
         $save = $admin->save();
 
-        if($save){
+        if ($save) {
 
-            return back()->with('success','New user has been successfully registered');
+            return back()->with('success', 'New user has been successfully registered');
 
-        }else{
+        } else {
 
-            return back()->with('failed','Something went wrong try again later!');
+            return back()->with('failed', 'Something went wrong try again later!');
 
         }
 
 
     }
 
-    function check(Request $request){
-        
-        $request->validate([
-        'email'=>'required|email',
-        'password'=>'required|min:5|max:15'
+    function check(Request $request)
+    {
+
+        $validatedData = $request->validate([
+            'email' => 'required|email',
+            'password' => 'required|min:5|max:15'
         ]);
 
         $user_info = Admin::where('email', '=', $request->email)->first();
 
-        if(!$user_info){
+        if (!$user_info) {
             return back()->with('fail', 'Please provide correct username or password');
-        }else{
+        } else {
             //check password
-            if(Hash::check($request->password, $user_info->password)){
-              $request->session()->put('loggedUser',$user_info);
-              
-              return redirect ('/dashboard');
-            }else{
+            if (Auth::attempt($validatedData)) {
+                $request->session()->regenerate();
+                return redirect()->intended('dashboard');
+            } else {
                 return back()->with('fail', 'Please provide correct username or password');
             }
         }
     }
 
-    function dashboard(){
-        return view ('/dashboard');
+    function dashboard()
+    {
+        return view('/dashboard');
     }
 }
