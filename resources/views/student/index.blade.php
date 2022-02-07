@@ -15,6 +15,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
 
     <link rel="icon" href="{{ asset('custom/assets/images/favicon.ico') }}" type="image/x-icon">
@@ -48,6 +49,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('custom/assets/css/simple-line-icons.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('custom/assets/css/ionicons.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('custom/assets/css/jquery.mCustomScrollbar.css') }}">
+    <script src="{{ asset('custom/assets/js/jquery.min.js') }}"></script>
 </head>
 
 <body>
@@ -178,46 +180,48 @@
                                                             <tbody>
 
                                                                 @foreach ($student as $index => $row)
+                                                                    @can('view', $row)
 
-                                                                    <tr>
-                                                                        <td>{{ $index + 1 }}</td>
-                                                                        <td><a
-                                                                                href="{{ url('student/' . $row->id) }}">{{ strtoupper($row->first_name) }}</a>
-                                                                        </td>
-                                                                        <td><a
-                                                                                href="{{ url('student/' . $row->id) }}">{{ strtoupper($row->surname) }}</a>
-                                                                        </td>
-                                                                        <td><a
-                                                                                href="{{ url('student/' . $row->id) }}">{{ $row->birth_date }}</a>
-                                                                        </td>
-                                                                        <td><a
-                                                                                href="{{ url('student/' . $row->id) }}">{{ $row->sex }}</a>
-                                                                        </td>
-                                                                        <td><a
-                                                                                href="{{ url('student/' . $row->id) }}">{{ $row->disability }}</a>
-                                                                        </td>
-                                                                        {{-- <td>
+
+                                                                        <tr>
+                                                                            <td>{{ $index + 1 }}</td>
+                                                                            <td><a
+                                                                                    href="{{ url('student/' . $row->id) }}">{{ strtoupper($row->first_name) }}</a>
+                                                                            </td>
+                                                                            <td><a
+                                                                                    href="{{ url('student/' . $row->id) }}">{{ strtoupper($row->surname) }}</a>
+                                                                            </td>
+                                                                            <td><a
+                                                                                    href="{{ url('student/' . $row->id) }}">{{ $row->birth_date }}</a>
+                                                                            </td>
+                                                                            <td><a
+                                                                                    href="{{ url('student/' . $row->id) }}">{{ $row->sex }}</a>
+                                                                            </td>
+                                                                            <td><a
+                                                                                    href="{{ url('student/' . $row->id) }}">{{ $row->disability }}</a>
+                                                                            </td>
+                                                                            {{-- <td>
       <a href="{{ url('student/'.$row->id) }}" class="btn btn-primary btn-round"><i class="icofont icofont-listing-number"></i></a>
     </td> --}}
-                                                                        <td style="text-align: center;">
-                                                                            <a href="{{ url('student/' . $row->id . '/edit') }}"
-                                                                                class="btn btn-primary btn-round"><i
-                                                                                    class="icofont icofont-edit"></i></a>
-                                                                        </td>
-                                                                        <td>
-                                                                            <form
-                                                                                action="{{ url('student/' . $row->id) }}"
-                                                                                method="POST">
-                                                                                @csrf
-                                                                                @method('DELETE')
-                                                                                <button type="submit"
-                                                                                    class="btn btn-danger  btn-round"><i
-                                                                                        class="icofont icofont-trash"></i></button>
-                                                                            </form>
+                                                                            <td style="text-align: center;">
+                                                                                <a href="{{ url('student/' . $row->id . '/edit') }}"
+                                                                                    class="btn btn-primary btn-round"><i
+                                                                                        class="icofont icofont-edit" data-toggle="tooltip" title='Edit this record'></i></a>
+                                                                            </td>
+                                                                            <td>
+                                                                                <form
+                                                                                    action="{{ url('student/' . $row->id) }}"
+                                                                                    method="POST">
+                                                                                    @csrf
+                                                                                    @method('DELETE')
+                                                                                    <button type="submit"
+                                                                                        class="btn btn-danger  btn-round"><i
+                                                                                            class="icofont icofont-trash show_confirm" data-toggle="tooltip" title='Delete this record'></i></button>
+                                                                                </form>
 
-                                                                        </td>
-                                                                    </tr>
-
+                                                                            </td>
+                                                                        </tr>
+                                                                    @endcan
                                                                 @endforeach
 
                                                             </tbody>
@@ -331,6 +335,27 @@
                 <script src="{{ asset('custom/assets/js/demo-12.js') }}"></script>
                 <script src="{{ asset('custom/assets/js/jquery.mCustomScrollbar.concat.min.js') }}"></script>
                 <script src="{{ asset('custom/assets/js/jquery.mousewheel.min.js') }}"></script>
+                <script src="{{ asset('custom/assets/js/sweetalert.min.js') }}"></script>
+                
+                <script type="text/javascript">
+                    $('.show_confirm').click(function(event) {
+                        var form = $(this).closest("form");
+                        var name = $(this).data("name");
+                        event.preventDefault();
+                        swal({
+                                title: `Are you sure you want to delete this record?`,
+                                text: "If you delete this, it will be gone forever.",
+                                icon: "warning",
+                                buttons: true,
+                                dangerMode: true,
+                            })
+                            .then((willDelete) => {
+                                if (willDelete) {
+                                    form.submit();
+                                }
+                            });
+                    });
+                </script>
                 <script type="text/javascript">
                     $("document").ready(function() {
                         setTimeout(function() {

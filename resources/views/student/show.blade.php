@@ -236,12 +236,12 @@
                                                                                                     <td>{{ strtoupper($student->disability) }}
                                                                                                     </td>
                                                                                                 </tr>
-                                                                                                <tr>
+                                                                                                {{-- <tr>
                                                                                                     <th scope="row">
                                                                                                         Address</th>
                                                                                                     <td>{{ strtoupper($student->address) }}
                                                                                                     </td>
-                                                                                                </tr>
+                                                                                                </tr> --}}
                                                                                             </tbody>
                                                                                         </table>
                                                                                     </div>
@@ -272,7 +272,7 @@
 
                                                                                                 <tr>
                                                                                                     <th scope="row">
-                                                                                                        Address</th>
+                                                                                                        Guardian Address</th>
                                                                                                     <td>{{ strtoupper($student->address) }}
                                                                                                     </td>
                                                                                                 </tr>

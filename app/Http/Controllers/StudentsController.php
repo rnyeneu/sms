@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use App\Models\Student;
 
@@ -37,7 +38,9 @@ class StudentsController extends Controller
     public function store(Request $request)
     {
         
+
         $student = new Student;
+        $student->user_id = Auth::user()->id;
         $student->registration_number = $request->input('registration_number');
         $student->first_name = $request->input('first_name');
         $student->surname = $request->input('surname');
