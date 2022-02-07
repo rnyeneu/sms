@@ -37,21 +37,21 @@ class StudentsController extends Controller
      */
     public function store(Request $request)
     {
-        
+
 
         $student = new Student;
         $student->user_id = Auth::user()->id;
         $student->registration_number = $request->input('registration_number');
-        $student->first_name = $request->input('first_name');
-        $student->surname = $request->input('surname');
+        $student->first_name = strtoupper($request->input('first_name'));
+        $student->surname = strtoupper($request->input('surname'));
         $student->birth_date = $request->input('birth_date');
         $student->sex = $request->input('sex');
         $student->disability = $request->input('disability');
-        $student->guardian_first_name = $request->input('guardian_first_name');
-        $student->guardian_surname = $request->input('guardian_surname');
+        $student->guardian_first_name = strtoupper($request->input('guardian_first_name'));
+        $student->guardian_surname = strtoupper($request->input('guardian_surname'));
         $student->guardian_sex = $request->input('guardian_sex');
         $student->guardian_phone_number = $request->input('guardian_phone_number');
-        $student->address = $request->input('address');
+        $student->address = strtoupper($request->input('address'));
         $student->save();
         return redirect('student')->with('status', 'A student added successfully');
     }
