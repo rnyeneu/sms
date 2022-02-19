@@ -18,7 +18,7 @@ class StudentPolicy
      */
     public function viewAny(User $user)
     {
-        
+
     }
 
     /**
@@ -30,6 +30,7 @@ class StudentPolicy
      */
     public function view(User $user, Student $student)
     {
+        if($user->)
          if ($user->id === $student->user_id)
             return true;
             return false;
@@ -67,7 +68,7 @@ class StudentPolicy
     public function delete(User $user, Student $student)
     {
         //
-        
+
     }
 
     /**

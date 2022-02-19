@@ -185,8 +185,6 @@
 
                                                         @foreach ($student as $index => $row)
                                                             @can('view', $row)
-
-
                                                                 <tr>
                                                                     <td>{{ $index + 1 }}</td>
                                                                     <td><a
