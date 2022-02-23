@@ -89,6 +89,7 @@ class StudentsController extends Controller
      */
     public function update(Request $request, $id)
     {
+        if(auth()->user()->can('update', $id)){
         $student = Student::find($id);
         $student->registration_number = $request->input('registration_number');
         $student->first_name = $request->input('first_name');
@@ -103,6 +104,8 @@ class StudentsController extends Controller
         $student->address = $request->input('address');
         $student->update();
         return redirect('student')->with('status', 'A student updated successfully');
+        }
+        return redirect('student')->with('status', "You can not update this record, it does not belongs to you");
     }
 
     /**
@@ -113,8 +116,14 @@ class StudentsController extends Controller
      */
     public function destroy($id)
     {
+        
         $student = Student::find($id);
+        if(Auth::user()->can('delete', $id)){
         $student->delete();
         return redirect('student')->with('status', 'A student deleted successfully');
+
+        }else{
+        return redirect('student')->with('status', "You can't delete this record, it does not belongs to you");
+        } 
     }
 }

@@ -404,14 +404,18 @@
                                                                         </div>
                                                                     </div>
                                                                 </div>
+                                                                @can('update', $student)
+                                                                    
+                                                                
                                                                 <div class="row">
                                                                     <div class="col-sm-8 col-lg-10">
                                                                         <div class="input-group">
                                                                             <input type="submit"
-                                                                                class="btn btn-primary" value="UPDATE">
+                                                                                class="btn btn-primary " value="UPDATE">
                                                                         </div>
                                                                     </div>
                                                                 </div>
+                                                                @endcan
                                                                 </form>
 
 

@@ -166,6 +166,11 @@
                                                     <div class="dt-buttons">
                                                         <a class="dt-button buttons-copy buttons-html5" tabindex="0"
                                                             aria-controls="basic-btn" href="student/create"><span>New Student</span></a>
+                                                           
+                                                    </div>
+                                                    <div class="float-right">
+                                                        <em>Total students: </em><label class="badge badge-danger"> <b>{{ count($student) }}</b></label>
+                                                            
                                                     </div>
                                                     <table  class="table table-striped  nowrap">
                                                         <thead>
@@ -204,15 +209,19 @@
                                                                     </td>
                                                                     {{-- <td>
 <a href="{{ url('student/'.$row->id) }}" class="btn btn-primary btn-round"><i class="icofont icofont-listing-number"></i></a>
-</td> --}}
+</td> --}}                                                          
                                                                     <td style="text-align: center;">
+                                                                        
                                                                         <a href="{{ url('student/' . $row->id . '/edit') }}"
                                                                            class="btn btn-primary btn-round"><i
                                                                                 class="icofont icofont-edit"
                                                                                 data-toggle="tooltip"
                                                                                 title='Edit this record'></i></a>
+                                                                                
                                                                     </td>
+                                                                    
                                                                     <td>
+                                                                       
                                                                         <form
                                                                             action="{{ url('student/' . $row->id) }}"
                                                                             method="POST">
@@ -225,6 +234,7 @@
                                                                                     title='Delete this record'></i>
                                                                             </button>
                                                                         </form>
+                                                                       
 
                                                                     </td>
                                                                 </tr>
@@ -383,7 +393,7 @@
                 $("document").ready(function () {
                     setTimeout(function () {
                         $("div.alert").remove();
-                    }, 3000);
+                    }, 4000);
                 });
             </script>
 </body>

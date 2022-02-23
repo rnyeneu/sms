@@ -30,10 +30,10 @@ class StudentPolicy
      */
     public function view(User $user, Student $student)
     {
-        if($user->)
-         if ($user->id === $student->user_id)
+        
+        //  if ($user->id === $student->user_id)
             return true;
-            return false;
+            // return false;
     }
     /**
      * Determine whether the user can create models.
@@ -55,7 +55,7 @@ class StudentPolicy
      */
     public function update(User $user, Student $student)
     {
-        //
+        return $user->id === $student->user_id;
     }
 
     /**
@@ -67,7 +67,7 @@ class StudentPolicy
      */
     public function delete(User $user, Student $student)
     {
-        //
+        return $user->id === $student->user_id;
 
     }
 
