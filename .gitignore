@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /node_modules
 /public/hot
 /public/storage
@@ -14,3 +15,9 @@ yarn-error.log
 /.idea
 /.vscode
 composer.lock
+=======
+*
+!data/
+!.gitignore
+>>>>>>> 0bdc4b5 (Creating role registration form, controller and it model and migration)
+
